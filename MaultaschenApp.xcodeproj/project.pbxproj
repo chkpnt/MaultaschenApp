@@ -12,7 +12,6 @@
 		54BA89592250ACBD00DB5632 /* MaultaschenDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BA89492250ACBC00DB5632 /* MaultaschenDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BA895C2250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; };
 		54BA895D2250ACBD00DB5632 /* MaultaschenDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54BA89732250AD8200DB5632 /* MaultaschenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA896A2250AD8200DB5632 /* MaultaschenData.framework */; };
 		54BA897A2250AD8200DB5632 /* MaultaschenDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89792250AD8200DB5632 /* MaultaschenDataTests.swift */; };
 		54BA897C2250AD8200DB5632 /* MaultaschenData.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BA896C2250AD8200DB5632 /* MaultaschenData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BA897F2250AD8200DB5632 /* MaultaschenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA896A2250AD8200DB5632 /* MaultaschenData.framework */; };
@@ -123,6 +122,46 @@
 		54BA8AA92250C83200DB5632 /* NearbyVenuesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89CB2250B09200DB5632 /* NearbyVenuesInteractor.swift */; };
 		54BA8AAB2250C86500DB5632 /* VenueServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */; };
 		54BA8AAC2250CA8400DB5632 /* VenueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A5F2250BDBF00DB5632 /* VenueService.swift */; };
+		54BA8ABC2250D0EB00DB5632 /* NearbyMealsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AB62250D0EB00DB5632 /* NearbyMealsInteractorTests.swift */; };
+		54BA8AC12250D16400DB5632 /* SwiftyMocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; };
+		54BA8AC32250D18E00DB5632 /* SwiftyMocky.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA8AC42250D1B200DB5632 /* Realm.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8A592250B9BB00DB5632 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA8AC52250D1B200DB5632 /* RealmSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8A5A2250B9BB00DB5632 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA8AC62250D1E200DB5632 /* MaultaschenDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; };
+		54BA8AC72250D1FF00DB5632 /* SwiftyMocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; };
+		54BA8AEC2250D2A300DB5632 /* Y8EyzI6Mhkqla7nOpvWPRvhgW1kgX7erHY80P2LzJTo%3D in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ACC2250D2A300DB5632 /* Y8EyzI6Mhkqla7nOpvWPRvhgW1kgX7erHY80P2LzJTo%3D */; };
+		54BA8AEE2250D2A300DB5632 /* -5391266324709005860.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ACF2250D2A300DB5632 /* -5391266324709005860.srf */; };
+		54BA8AEF2250D2A300DB5632 /* 6131354243677788334.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD02250D2A300DB5632 /* 6131354243677788334.srf */; };
+		54BA8AF02250D2A300DB5632 /* 7960068226264245798.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD12250D2A300DB5632 /* 7960068226264245798.srf */; };
+		54BA8AF12250D2A300DB5632 /* -1745143697730744606.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD22250D2A300DB5632 /* -1745143697730744606.srf */; };
+		54BA8AF22250D2A300DB5632 /* -443871707662674025.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD32250D2A300DB5632 /* -443871707662674025.srf */; };
+		54BA8AF32250D2A300DB5632 /* 5821681777397536773.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD42250D2A300DB5632 /* 5821681777397536773.srf */; };
+		54BA8AF42250D2A300DB5632 /* -4422884994607892359.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD52250D2A300DB5632 /* -4422884994607892359.srf */; };
+		54BA8AF52250D2A300DB5632 /* 290008289170464964.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD62250D2A300DB5632 /* 290008289170464964.srf */; };
+		54BA8AF62250D2A300DB5632 /* 5679577191219145914.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD72250D2A300DB5632 /* 5679577191219145914.srf */; };
+		54BA8AF72250D2A300DB5632 /* 2805685270005081197.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD82250D2A300DB5632 /* 2805685270005081197.srf */; };
+		54BA8AF82250D2A300DB5632 /* 5599542668003271862.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AD92250D2A300DB5632 /* 5599542668003271862.srf */; };
+		54BA8AF92250D2A300DB5632 /* 5448400651999395215.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ADA2250D2A300DB5632 /* 5448400651999395215.srf */; };
+		54BA8AFA2250D2A300DB5632 /* 5838427962278947990.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ADB2250D2A300DB5632 /* 5838427962278947990.srf */; };
+		54BA8AFB2250D2A300DB5632 /* 3095248600209312644.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ADC2250D2A300DB5632 /* 3095248600209312644.srf */; };
+		54BA8AFC2250D2A300DB5632 /* 394507944008901575.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ADD2250D2A300DB5632 /* 394507944008901575.srf */; };
+		54BA8AFD2250D2A300DB5632 /* -7427059908679167243.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ADE2250D2A300DB5632 /* -7427059908679167243.srf */; };
+		54BA8AFE2250D2A300DB5632 /* 3262797375893593899.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8ADF2250D2A300DB5632 /* 3262797375893593899.srf */; };
+		54BA8AFF2250D2A300DB5632 /* 315134048360421141.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE02250D2A300DB5632 /* 315134048360421141.srf */; };
+		54BA8B002250D2A300DB5632 /* -9200634279017046880.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE12250D2A300DB5632 /* -9200634279017046880.srf */; };
+		54BA8B012250D2A300DB5632 /* 6293590932996413568.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE22250D2A300DB5632 /* 6293590932996413568.srf */; };
+		54BA8B022250D2A300DB5632 /* 3929712183597770319.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE32250D2A300DB5632 /* 3929712183597770319.srf */; };
+		54BA8B032250D2A300DB5632 /* -7259790035668271734.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE42250D2A300DB5632 /* -7259790035668271734.srf */; };
+		54BA8B042250D2A300DB5632 /* -4300305066580427029.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE52250D2A300DB5632 /* -4300305066580427029.srf */; };
+		54BA8B052250D2A300DB5632 /* -6174265041486386648.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE62250D2A300DB5632 /* -6174265041486386648.srf */; };
+		54BA8B062250D2A300DB5632 /* -3526161323316322381.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE72250D2A300DB5632 /* -3526161323316322381.srf */; };
+		54BA8B072250D2A300DB5632 /* -6442776191158457857.srf in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE82250D2A300DB5632 /* -6442776191158457857.srf */; };
+		54BA8B082250D2A300DB5632 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AE92250D2A300DB5632 /* .gitignore */; };
+		54BA8B092250D2A300DB5632 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AEA2250D2A300DB5632 /* Mock.generated.swift */; };
+		54BA8B0A2250D2A300DB5632 /* SwiftyMocky.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8AEB2250D2A300DB5632 /* SwiftyMocky.yml */; };
+		54BA8B0C2250D41B00DB5632 /* SwiftyMocky.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA8B0D2250D43800DB5632 /* Swinject.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8A2F2250B21100DB5632 /* Swinject.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA8B0E2250D45200DB5632 /* MealDetailsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8ABA2250D0EB00DB5632 /* MealDetailsInteractorTests.swift */; };
 		54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F6041B2250AB42003EAFFC /* Assets.xcassets */; };
 		54F6042A2250AB42003EAFFC /* MaultaschenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */; };
 /* End PBXBuildFile section */
@@ -197,6 +236,31 @@
 				54BA895D2250ACBD00DB5632 /* MaultaschenDomain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA8AC22250D17C00DB5632 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54BA8AC42250D1B200DB5632 /* Realm.framework in Copy Frameworks */,
+				54BA8AC52250D1B200DB5632 /* RealmSwift.framework in Copy Frameworks */,
+				54BA8AC32250D18E00DB5632 /* SwiftyMocky.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA8B0B2250D3FF00DB5632 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54BA8B0D2250D43800DB5632 /* Swinject.framework in Copy Frameworks */,
+				54BA8B0C2250D41B00DB5632 /* SwiftyMocky.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -318,6 +382,40 @@
 		54BA8A742250C2F300DB5632 /* TextViewPopupPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewPopupPresenter.swift; sourceTree = "<group>"; };
 		54BA8A7E2250C3A600DB5632 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueServiceProtocol.swift; sourceTree = "<group>"; };
+		54BA8AB62250D0EB00DB5632 /* NearbyMealsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMealsInteractorTests.swift; sourceTree = "<group>"; };
+		54BA8ABA2250D0EB00DB5632 /* MealDetailsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsInteractorTests.swift; sourceTree = "<group>"; };
+		54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyMocky.framework; path = Carthage/Build/iOS/SwiftyMocky.framework; sourceTree = "<group>"; };
+		54BA8ACC2250D2A300DB5632 /* Y8EyzI6Mhkqla7nOpvWPRvhgW1kgX7erHY80P2LzJTo%3D */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "Y8EyzI6Mhkqla7nOpvWPRvhgW1kgX7erHY80P2LzJTo%3D"; sourceTree = "<group>"; };
+		54BA8ACD2250D2A300DB5632 /* SourceryRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SourceryRuntime.framework; sourceTree = "<group>"; };
+		54BA8ACF2250D2A300DB5632 /* -5391266324709005860.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-5391266324709005860.srf"; sourceTree = "<group>"; };
+		54BA8AD02250D2A300DB5632 /* 6131354243677788334.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 6131354243677788334.srf; sourceTree = "<group>"; };
+		54BA8AD12250D2A300DB5632 /* 7960068226264245798.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 7960068226264245798.srf; sourceTree = "<group>"; };
+		54BA8AD22250D2A300DB5632 /* -1745143697730744606.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-1745143697730744606.srf"; sourceTree = "<group>"; };
+		54BA8AD32250D2A300DB5632 /* -443871707662674025.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-443871707662674025.srf"; sourceTree = "<group>"; };
+		54BA8AD42250D2A300DB5632 /* 5821681777397536773.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 5821681777397536773.srf; sourceTree = "<group>"; };
+		54BA8AD52250D2A300DB5632 /* -4422884994607892359.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-4422884994607892359.srf"; sourceTree = "<group>"; };
+		54BA8AD62250D2A300DB5632 /* 290008289170464964.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 290008289170464964.srf; sourceTree = "<group>"; };
+		54BA8AD72250D2A300DB5632 /* 5679577191219145914.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 5679577191219145914.srf; sourceTree = "<group>"; };
+		54BA8AD82250D2A300DB5632 /* 2805685270005081197.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 2805685270005081197.srf; sourceTree = "<group>"; };
+		54BA8AD92250D2A300DB5632 /* 5599542668003271862.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 5599542668003271862.srf; sourceTree = "<group>"; };
+		54BA8ADA2250D2A300DB5632 /* 5448400651999395215.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 5448400651999395215.srf; sourceTree = "<group>"; };
+		54BA8ADB2250D2A300DB5632 /* 5838427962278947990.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 5838427962278947990.srf; sourceTree = "<group>"; };
+		54BA8ADC2250D2A300DB5632 /* 3095248600209312644.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 3095248600209312644.srf; sourceTree = "<group>"; };
+		54BA8ADD2250D2A300DB5632 /* 394507944008901575.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 394507944008901575.srf; sourceTree = "<group>"; };
+		54BA8ADE2250D2A300DB5632 /* -7427059908679167243.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-7427059908679167243.srf"; sourceTree = "<group>"; };
+		54BA8ADF2250D2A300DB5632 /* 3262797375893593899.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 3262797375893593899.srf; sourceTree = "<group>"; };
+		54BA8AE02250D2A300DB5632 /* 315134048360421141.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 315134048360421141.srf; sourceTree = "<group>"; };
+		54BA8AE12250D2A300DB5632 /* -9200634279017046880.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-9200634279017046880.srf"; sourceTree = "<group>"; };
+		54BA8AE22250D2A300DB5632 /* 6293590932996413568.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 6293590932996413568.srf; sourceTree = "<group>"; };
+		54BA8AE32250D2A300DB5632 /* 3929712183597770319.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = 3929712183597770319.srf; sourceTree = "<group>"; };
+		54BA8AE42250D2A300DB5632 /* -7259790035668271734.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-7259790035668271734.srf"; sourceTree = "<group>"; };
+		54BA8AE52250D2A300DB5632 /* -4300305066580427029.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-4300305066580427029.srf"; sourceTree = "<group>"; };
+		54BA8AE62250D2A300DB5632 /* -6174265041486386648.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-6174265041486386648.srf"; sourceTree = "<group>"; };
+		54BA8AE72250D2A300DB5632 /* -3526161323316322381.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-3526161323316322381.srf"; sourceTree = "<group>"; };
+		54BA8AE82250D2A300DB5632 /* -6442776191158457857.srf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "-6442776191158457857.srf"; sourceTree = "<group>"; };
+		54BA8AE92250D2A300DB5632 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		54BA8AEA2250D2A300DB5632 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		54BA8AEB2250D2A300DB5632 /* SwiftyMocky.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyMocky.yml; sourceTree = "<group>"; };
 		54F604112250AB3E003EAFFC /* MaultaschenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaultaschenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6041B2250AB42003EAFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F604202250AB42003EAFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -340,6 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BA89502250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */,
+				54BA8AC72250D1FF00DB5632 /* SwiftyMocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +456,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BA89732250AD8200DB5632 /* MaultaschenData.framework in Frameworks */,
+				54BA8AC62250D1E200DB5632 /* MaultaschenDomain.framework in Frameworks */,
+				54BA8AC12250D16400DB5632 /* SwiftyMocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,6 +498,8 @@
 		54BA89552250ACBD00DB5632 /* MaultaschenDomainTests */ = {
 			isa = PBXGroup;
 			children = (
+				54BA8AC82250D2A300DB5632 /* Mocks */,
+				54BA8AAF2250D01600DB5632 /* Meal */,
 				54BA89562250ACBD00DB5632 /* MaultaschenDomainTests.swift */,
 				54BA89582250ACBD00DB5632 /* Info.plist */,
 			);
@@ -430,9 +532,8 @@
 		54BA89872250ADAF00DB5632 /* Meal */ = {
 			isa = PBXGroup;
 			children = (
+				54BA8AAD2250CFEA00DB5632 /* Interactors */,
 				54BA8A342250B2C700DB5632 /* Meal.swift */,
-				54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */,
-				54BA89BF2250B09200DB5632 /* NearbyMealsInteractor.swift */,
 				54BA8A382250B37200DB5632 /* MealServiceProtocol.swift */,
 			);
 			path = Meal;
@@ -441,8 +542,8 @@
 		54BA89882250ADBA00DB5632 /* Venue */ = {
 			isa = PBXGroup;
 			children = (
+				54BA8AAE2250CFFD00DB5632 /* Interactors */,
 				54BA8A332250B2C700DB5632 /* Venue.swift */,
-				54BA89CB2250B09200DB5632 /* NearbyVenuesInteractor.swift */,
 				54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */,
 			);
 			path = Venue;
@@ -637,6 +738,7 @@
 		54BA8A2E2250B21100DB5632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */,
 				54BA8A592250B9BB00DB5632 /* Realm.framework */,
 				54BA8A5A2250B9BB00DB5632 /* RealmSwift.framework */,
 				54BA8A312250B22400DB5632 /* Rswift.framework */,
@@ -707,6 +809,110 @@
 				54BA8A742250C2F300DB5632 /* TextViewPopupPresenter.swift */,
 			);
 			path = TextViewPopup;
+			sourceTree = "<group>";
+		};
+		54BA8AAD2250CFEA00DB5632 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */,
+				54BA89BF2250B09200DB5632 /* NearbyMealsInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		54BA8AAE2250CFFD00DB5632 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				54BA89CB2250B09200DB5632 /* NearbyVenuesInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		54BA8AAF2250D01600DB5632 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8AB02250D02C00DB5632 /* Interactors */,
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		54BA8AB02250D02C00DB5632 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8ABA2250D0EB00DB5632 /* MealDetailsInteractorTests.swift */,
+				54BA8AB62250D0EB00DB5632 /* NearbyMealsInteractorTests.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		54BA8AC82250D2A300DB5632 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8AC92250D2A300DB5632 /* cache */,
+				54BA8AE92250D2A300DB5632 /* .gitignore */,
+				54BA8AEA2250D2A300DB5632 /* Mock.generated.swift */,
+				54BA8AEB2250D2A300DB5632 /* SwiftyMocky.yml */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		54BA8AC92250D2A300DB5632 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8ACA2250D2A300DB5632 /* Sourcery */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		54BA8ACA2250D2A300DB5632 /* Sourcery */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8ACB2250D2A300DB5632 /* Mock.swifttemplate */,
+				54BA8ACD2250D2A300DB5632 /* SourceryRuntime.framework */,
+				54BA8ACE2250D2A300DB5632 /* MaultaschenData */,
+			);
+			path = Sourcery;
+			sourceTree = "<group>";
+		};
+		54BA8ACB2250D2A300DB5632 /* Mock.swifttemplate */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8ACC2250D2A300DB5632 /* Y8EyzI6Mhkqla7nOpvWPRvhgW1kgX7erHY80P2LzJTo%3D */,
+			);
+			path = Mock.swifttemplate;
+			sourceTree = "<group>";
+		};
+		54BA8ACE2250D2A300DB5632 /* MaultaschenData */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8ACF2250D2A300DB5632 /* -5391266324709005860.srf */,
+				54BA8AD02250D2A300DB5632 /* 6131354243677788334.srf */,
+				54BA8AD12250D2A300DB5632 /* 7960068226264245798.srf */,
+				54BA8AD22250D2A300DB5632 /* -1745143697730744606.srf */,
+				54BA8AD32250D2A300DB5632 /* -443871707662674025.srf */,
+				54BA8AD42250D2A300DB5632 /* 5821681777397536773.srf */,
+				54BA8AD52250D2A300DB5632 /* -4422884994607892359.srf */,
+				54BA8AD62250D2A300DB5632 /* 290008289170464964.srf */,
+				54BA8AD72250D2A300DB5632 /* 5679577191219145914.srf */,
+				54BA8AD82250D2A300DB5632 /* 2805685270005081197.srf */,
+				54BA8AD92250D2A300DB5632 /* 5599542668003271862.srf */,
+				54BA8ADA2250D2A300DB5632 /* 5448400651999395215.srf */,
+				54BA8ADB2250D2A300DB5632 /* 5838427962278947990.srf */,
+				54BA8ADC2250D2A300DB5632 /* 3095248600209312644.srf */,
+				54BA8ADD2250D2A300DB5632 /* 394507944008901575.srf */,
+				54BA8ADE2250D2A300DB5632 /* -7427059908679167243.srf */,
+				54BA8ADF2250D2A300DB5632 /* 3262797375893593899.srf */,
+				54BA8AE02250D2A300DB5632 /* 315134048360421141.srf */,
+				54BA8AE12250D2A300DB5632 /* -9200634279017046880.srf */,
+				54BA8AE22250D2A300DB5632 /* 6293590932996413568.srf */,
+				54BA8AE32250D2A300DB5632 /* 3929712183597770319.srf */,
+				54BA8AE42250D2A300DB5632 /* -7259790035668271734.srf */,
+				54BA8AE52250D2A300DB5632 /* -4300305066580427029.srf */,
+				54BA8AE62250D2A300DB5632 /* -6174265041486386648.srf */,
+				54BA8AE72250D2A300DB5632 /* -3526161323316322381.srf */,
+				54BA8AE82250D2A300DB5632 /* -6442776191158457857.srf */,
+			);
+			path = MaultaschenData;
 			sourceTree = "<group>";
 		};
 		54F604082250AB3E003EAFFC = {
@@ -805,6 +1011,7 @@
 				54BA894B2250ACBC00DB5632 /* Sources */,
 				54BA894C2250ACBC00DB5632 /* Frameworks */,
 				54BA894D2250ACBC00DB5632 /* Resources */,
+				54BA8B0B2250D3FF00DB5632 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -844,6 +1051,7 @@
 				54BA896E2250AD8200DB5632 /* Sources */,
 				54BA896F2250AD8200DB5632 /* Frameworks */,
 				54BA89702250AD8200DB5632 /* Resources */,
+				54BA8AC22250D17C00DB5632 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -963,6 +1171,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA8AF12250D2A300DB5632 /* -1745143697730744606.srf in Resources */,
+				54BA8B012250D2A300DB5632 /* 6293590932996413568.srf in Resources */,
+				54BA8B0A2250D2A300DB5632 /* SwiftyMocky.yml in Resources */,
+				54BA8AFA2250D2A300DB5632 /* 5838427962278947990.srf in Resources */,
+				54BA8AF62250D2A300DB5632 /* 5679577191219145914.srf in Resources */,
+				54BA8AF32250D2A300DB5632 /* 5821681777397536773.srf in Resources */,
+				54BA8AEE2250D2A300DB5632 /* -5391266324709005860.srf in Resources */,
+				54BA8AF02250D2A300DB5632 /* 7960068226264245798.srf in Resources */,
+				54BA8B062250D2A300DB5632 /* -3526161323316322381.srf in Resources */,
+				54BA8B082250D2A300DB5632 /* .gitignore in Resources */,
+				54BA8B022250D2A300DB5632 /* 3929712183597770319.srf in Resources */,
+				54BA8B052250D2A300DB5632 /* -6174265041486386648.srf in Resources */,
+				54BA8B002250D2A300DB5632 /* -9200634279017046880.srf in Resources */,
+				54BA8AFB2250D2A300DB5632 /* 3095248600209312644.srf in Resources */,
+				54BA8AFD2250D2A300DB5632 /* -7427059908679167243.srf in Resources */,
+				54BA8AEF2250D2A300DB5632 /* 6131354243677788334.srf in Resources */,
+				54BA8B032250D2A300DB5632 /* -7259790035668271734.srf in Resources */,
+				54BA8AF42250D2A300DB5632 /* -4422884994607892359.srf in Resources */,
+				54BA8AFE2250D2A300DB5632 /* 3262797375893593899.srf in Resources */,
+				54BA8AF52250D2A300DB5632 /* 290008289170464964.srf in Resources */,
+				54BA8AF92250D2A300DB5632 /* 5448400651999395215.srf in Resources */,
+				54BA8AF82250D2A300DB5632 /* 5599542668003271862.srf in Resources */,
+				54BA8AF22250D2A300DB5632 /* -443871707662674025.srf in Resources */,
+				54BA8AEC2250D2A300DB5632 /* Y8EyzI6Mhkqla7nOpvWPRvhgW1kgX7erHY80P2LzJTo%3D in Resources */,
+				54BA8B072250D2A300DB5632 /* -6442776191158457857.srf in Resources */,
+				54BA8AF72250D2A300DB5632 /* 2805685270005081197.srf in Resources */,
+				54BA8AFF2250D2A300DB5632 /* 315134048360421141.srf in Resources */,
+				54BA8B042250D2A300DB5632 /* -4300305066580427029.srf in Resources */,
+				54BA8AFC2250D2A300DB5632 /* 394507944008901575.srf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1104,7 +1341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA8B0E2250D45200DB5632 /* MealDetailsInteractorTests.swift in Sources */,
+				54BA8B092250D2A300DB5632 /* Mock.generated.swift in Sources */,
 				54BA89572250ACBD00DB5632 /* MaultaschenDomainTests.swift in Sources */,
+				54BA8ABC2250D0EB00DB5632 /* NearbyMealsInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1342,6 +1582,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/MaultaschenDomainTests/Mocks/cache/Sourcery",
+				);
 				INFOPLIST_FILE = MaultaschenDomainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1361,6 +1606,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/MaultaschenDomainTests/Mocks/cache/Sourcery",
+				);
 				INFOPLIST_FILE = MaultaschenDomainTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1444,6 +1694,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MaultaschenDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1463,6 +1717,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MaultaschenDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1532,7 +1790,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG USE_R";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG USE_R Mocky";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -1586,7 +1844,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = USE_R;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "USE_R Mocky";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
