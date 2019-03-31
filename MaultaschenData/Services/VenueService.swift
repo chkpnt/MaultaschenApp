@@ -8,19 +8,19 @@
 
 import Foundation
 import CoreLocation
+import MaultaschenDomain
 
-//sourcery: AutoMockable
-public protocol VenueRepositoryProtocol {
-    func getNearbyVenues() -> [Venue]
-}
-
-class VenueRepository: VenueRepositoryProtocol {
+class VenueService {
     
     private let db: LocalDatabaseProtocol
     
     init(db: LocalDatabaseProtocol) {
         self.db = db
     }
+    
+}
+
+extension VenueService: VenueServiceProtocol {
     
     /// Of course this would be async in reality
     public func getNearbyVenues() -> [Venue] {

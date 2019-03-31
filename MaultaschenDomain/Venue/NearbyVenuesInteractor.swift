@@ -7,25 +7,25 @@
 //
 
 import Foundation
-import MaultaschenData
 
 //sourcery: AutoMockable
-protocol NearbyVenuesInteractorProtocol: AnyObject {
+public protocol NearbyVenuesInteractorProtocol: AnyObject {
     func findVenues()
+    func set(delegate: NearbyVenuesInteractorDelegate)
 }
 
 //sourcery: AutoMockable
-protocol NearbyVenuesInteractorDelegate: AnyObject {
+public protocol NearbyVenuesInteractorDelegate: AnyObject {
     func didFind(venues: [Venue])
 }
 
 class NearbyVenuesInteractor: NearbyVenuesInteractorProtocol {
     
-    private let venueRepository: VenueRepositoryProtocol
+    private let venueService: VenueServiceProtocol
     private weak var delegate: NearbyVenuesInteractorDelegate?
     
-    init(venueRepository: VenueRepositoryProtocol) {
-        self.venueRepository = venueRepository
+    init(venueService: VenueServiceProtocol) {
+        self.venueService = venueService
     }
     
     func set(delegate: NearbyVenuesInteractorDelegate) {
@@ -33,7 +33,7 @@ class NearbyVenuesInteractor: NearbyVenuesInteractorProtocol {
     }
     
     func findVenues() {
-        let venues = venueRepository.getNearbyVenues()
+        let venues = venueService.getNearbyVenues()
         delegate?.didFind(venues: venues)
     }
 }

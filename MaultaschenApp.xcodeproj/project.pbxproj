@@ -98,6 +98,31 @@
 		54BA8A8F2250C55700DB5632 /* MealDetails.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA899F2250B09200DB5632 /* MealDetails.xcassets */; };
 		54BA8A902250C55700DB5632 /* MealDetails.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89A32250B09200DB5632 /* MealDetails.strings */; };
 		54BA8A912250C59800DB5632 /* MealDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */; };
+		54BA8A922250C7C700DB5632 /* OverviewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D82250B09200DB5632 /* OverviewAssembly.swift */; };
+		54BA8A932250C7C700DB5632 /* OverviewRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D92250B09200DB5632 /* OverviewRouterProtocol.swift */; };
+		54BA8A942250C7C700DB5632 /* OverviewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89DA2250B09200DB5632 /* OverviewWireframe.swift */; };
+		54BA8A952250C7C700DB5632 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89DC2250B09200DB5632 /* OverviewViewController.swift */; };
+		54BA8A962250C7C700DB5632 /* OverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89DD2250B09200DB5632 /* OverviewPresenter.swift */; };
+		54BA8A972250C7C700DB5632 /* Overview.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89DB2250B09200DB5632 /* Overview.strings */; };
+		54BA8A982250C7C700DB5632 /* Overview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89D72250B09200DB5632 /* Overview.xcassets */; };
+		54BA8A992250C7D600DB5632 /* SimpleFilterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89962250B09200DB5632 /* SimpleFilterAssembly.swift */; };
+		54BA8A9A2250C7D600DB5632 /* SimpleFilterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89972250B09200DB5632 /* SimpleFilterWireframe.swift */; };
+		54BA8A9B2250C7D600DB5632 /* SimpleFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89952250B09200DB5632 /* SimpleFilter.storyboard */; };
+		54BA8A9C2250C7D600DB5632 /* SimpleFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA899A2250B09200DB5632 /* SimpleFilterViewController.swift */; };
+		54BA8A9D2250C7D600DB5632 /* SimpleFilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89982250B09200DB5632 /* SimpleFilterPresenter.swift */; };
+		54BA8A9E2250C7D600DB5632 /* SimpleFilterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89992250B09200DB5632 /* SimpleFilterRouter.swift */; };
+		54BA8A9F2250C7E900DB5632 /* NearbyVenuesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89CC2250B09200DB5632 /* NearbyVenuesAssembly.swift */; };
+		54BA8AA12250C7E900DB5632 /* NearbyVenuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89CE2250B09200DB5632 /* NearbyVenuesViewController.swift */; };
+		54BA8AA22250C7E900DB5632 /* NearbyVenuesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89CF2250B09200DB5632 /* NearbyVenuesPresenter.swift */; };
+		54BA8AA32250C7E900DB5632 /* NearbyVenuesRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D42250B09200DB5632 /* NearbyVenuesRouterProtocol.swift */; };
+		54BA8AA42250C7E900DB5632 /* NearbyVenuesWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D52250B09200DB5632 /* NearbyVenuesWireframe.swift */; };
+		54BA8AA52250C7E900DB5632 /* NearbyVenues.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89CD2250B09200DB5632 /* NearbyVenues.xcassets */; };
+		54BA8AA62250C7EE00DB5632 /* VenueCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D12250B09200DB5632 /* VenueCollectionViewCellModel.swift */; };
+		54BA8AA72250C7EE00DB5632 /* VenueCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89D22250B09200DB5632 /* VenueCollectionViewCell.xib */; };
+		54BA8AA82250C7EE00DB5632 /* VenueCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D32250B09200DB5632 /* VenueCollectionViewCell.swift */; };
+		54BA8AA92250C83200DB5632 /* NearbyVenuesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89CB2250B09200DB5632 /* NearbyVenuesInteractor.swift */; };
+		54BA8AAB2250C86500DB5632 /* VenueServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */; };
+		54BA8AAC2250CA8400DB5632 /* VenueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A5F2250BDBF00DB5632 /* VenueService.swift */; };
 		54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F6041B2250AB42003EAFFC /* Assets.xcassets */; };
 		54F6042A2250AB42003EAFFC /* MaultaschenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */; };
 /* End PBXBuildFile section */
@@ -292,6 +317,7 @@
 		54BA8A732250C2F300DB5632 /* TextViewPopupAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewPopupAssembly.swift; sourceTree = "<group>"; };
 		54BA8A742250C2F300DB5632 /* TextViewPopupPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewPopupPresenter.swift; sourceTree = "<group>"; };
 		54BA8A7E2250C3A600DB5632 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueServiceProtocol.swift; sourceTree = "<group>"; };
 		54F604112250AB3E003EAFFC /* MaultaschenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaultaschenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6041B2250AB42003EAFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F604202250AB42003EAFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -416,6 +442,8 @@
 			isa = PBXGroup;
 			children = (
 				54BA8A332250B2C700DB5632 /* Venue.swift */,
+				54BA89CB2250B09200DB5632 /* NearbyVenuesInteractor.swift */,
+				54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */,
 			);
 			path = Venue;
 			sourceTree = "<group>";
@@ -439,12 +467,12 @@
 		54BA89942250B09200DB5632 /* SimpleFilter */ = {
 			isa = PBXGroup;
 			children = (
-				54BA89952250B09200DB5632 /* SimpleFilter.storyboard */,
 				54BA89962250B09200DB5632 /* SimpleFilterAssembly.swift */,
 				54BA89972250B09200DB5632 /* SimpleFilterWireframe.swift */,
+				54BA89952250B09200DB5632 /* SimpleFilter.storyboard */,
+				54BA899A2250B09200DB5632 /* SimpleFilterViewController.swift */,
 				54BA89982250B09200DB5632 /* SimpleFilterPresenter.swift */,
 				54BA89992250B09200DB5632 /* SimpleFilterRouter.swift */,
-				54BA899A2250B09200DB5632 /* SimpleFilterViewController.swift */,
 			);
 			path = SimpleFilter;
 			sourceTree = "<group>";
@@ -551,13 +579,12 @@
 			isa = PBXGroup;
 			children = (
 				54BA89D02250B09200DB5632 /* VenueCollectionViewCell */,
-				54BA89CB2250B09200DB5632 /* NearbyVenuesInteractor.swift */,
 				54BA89CC2250B09200DB5632 /* NearbyVenuesAssembly.swift */,
-				54BA89CD2250B09200DB5632 /* NearbyVenues.xcassets */,
 				54BA89CE2250B09200DB5632 /* NearbyVenuesViewController.swift */,
 				54BA89CF2250B09200DB5632 /* NearbyVenuesPresenter.swift */,
 				54BA89D42250B09200DB5632 /* NearbyVenuesRouterProtocol.swift */,
 				54BA89D52250B09200DB5632 /* NearbyVenuesWireframe.swift */,
+				54BA89CD2250B09200DB5632 /* NearbyVenues.xcassets */,
 			);
 			path = NearbyVenues;
 			sourceTree = "<group>";
@@ -575,13 +602,13 @@
 		54BA89D62250B09200DB5632 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
-				54BA89D72250B09200DB5632 /* Overview.xcassets */,
 				54BA89D82250B09200DB5632 /* OverviewAssembly.swift */,
 				54BA89D92250B09200DB5632 /* OverviewRouterProtocol.swift */,
 				54BA89DA2250B09200DB5632 /* OverviewWireframe.swift */,
-				54BA89DB2250B09200DB5632 /* Overview.strings */,
 				54BA89DC2250B09200DB5632 /* OverviewViewController.swift */,
 				54BA89DD2250B09200DB5632 /* OverviewPresenter.swift */,
+				54BA89DB2250B09200DB5632 /* Overview.strings */,
+				54BA89D72250B09200DB5632 /* Overview.xcassets */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -589,9 +616,9 @@
 		54BA89DE2250B09200DB5632 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				54BA89E12250B09200DB5632 /* MainAssembly.swift */,
 				54BA89DF2250B09200DB5632 /* MainViewController.swift */,
 				54BA89E02250B09200DB5632 /* MainWireframe.swift */,
-				54BA89E12250B09200DB5632 /* MainAssembly.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -687,10 +714,10 @@
 			children = (
 				54F604132250AB3E003EAFFC /* MaultaschenApp */,
 				54F604282250AB42003EAFFC /* MaultaschenAppTests */,
-				54BA89482250ACBC00DB5632 /* MaultaschenDomain */,
-				54BA89552250ACBD00DB5632 /* MaultaschenDomainTests */,
 				54BA896B2250AD8200DB5632 /* MaultaschenData */,
 				54BA89782250AD8200DB5632 /* MaultaschenDataTests */,
+				54BA89482250ACBC00DB5632 /* MaultaschenDomain */,
+				54BA89552250ACBD00DB5632 /* MaultaschenDomainTests */,
 				54F604122250AB3E003EAFFC /* Products */,
 				54BA8A2E2250B21100DB5632 /* Frameworks */,
 			);
@@ -961,16 +988,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BA8A842250C3ED00DB5632 /* About.strings in Resources */,
+				54BA8A972250C7C700DB5632 /* Overview.strings in Resources */,
+				54BA8A982250C7C700DB5632 /* Overview.xcassets in Resources */,
 				54BA8A032250B09200DB5632 /* NearbyMeals.strings in Resources */,
+				54BA8A9B2250C7D600DB5632 /* SimpleFilter.storyboard in Resources */,
 				54BA8A8F2250C55700DB5632 /* MealDetails.xcassets in Resources */,
 				54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */,
 				54BA8A902250C55700DB5632 /* MealDetails.strings in Resources */,
+				54BA8AA52250C7E900DB5632 /* NearbyVenues.xcassets in Resources */,
 				54BA89F92250B09200DB5632 /* TextTableViewCell.xib in Resources */,
 				54BA8A2A2250B09200DB5632 /* LaunchScreen.storyboard in Resources */,
 				54BA8A882250C3ED00DB5632 /* About.xcassets in Resources */,
 				54BA8A862250C3ED00DB5632 /* About.storyboard in Resources */,
 				54BA8A012250B09200DB5632 /* NearbyMeals.xcassets in Resources */,
 				54BA8A072250B09200DB5632 /* MealCollectionViewCell.xib in Resources */,
+				54BA8AA72250C7EE00DB5632 /* VenueCollectionViewCell.xib in Resources */,
 				54BA8A772250C2F300DB5632 /* TextViewPopup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1059,11 +1091,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BA8A372250B32900DB5632 /* NearbyMealsInteractor.swift in Sources */,
+				54BA8AA92250C83200DB5632 /* NearbyVenuesInteractor.swift in Sources */,
 				54BA8A3E2250B49A00DB5632 /* MaultaschenDomainAssembly.swift in Sources */,
 				54BA8A362250B2C700DB5632 /* Meal.swift in Sources */,
 				54BA8A3C2250B3B800DB5632 /* ImageServiceProtocol.swift in Sources */,
 				54BA8A392250B37200DB5632 /* MealServiceProtocol.swift in Sources */,
 				54BA8A912250C59800DB5632 /* MealDetailsInteractor.swift in Sources */,
+				54BA8AAB2250C86500DB5632 /* VenueServiceProtocol.swift in Sources */,
 				54BA8A352250B2C700DB5632 /* Venue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1089,6 +1123,7 @@
 				54BA8A572250B92000DB5632 /* LocalDatabaseProtocol.swift in Sources */,
 				54BA8A642250BDBF00DB5632 /* ImageService.swift in Sources */,
 				54BA8A692250C04C00DB5632 /* R.generated.swift in Sources */,
+				54BA8AAC2250CA8400DB5632 /* VenueService.swift in Sources */,
 				54BA8A632250BDBF00DB5632 /* MealService.swift in Sources */,
 				54BA8A562250B92000DB5632 /* VenueEntityMapper.swift in Sources */,
 			);
@@ -1111,22 +1146,28 @@
 				54BA8A832250C3ED00DB5632 /* AboutViewModel.swift in Sources */,
 				54BA8A272250B09200DB5632 /* MainWireframe.swift in Sources */,
 				54BA8A8C2250C55700DB5632 /* MealDetailsRouter.swift in Sources */,
+				54BA8A9E2250C7D600DB5632 /* SimpleFilterRouter.swift in Sources */,
 				54BA89FF2250B09200DB5632 /* Observable.swift in Sources */,
 				54BA8A762250C2F300DB5632 /* TextViewPopupViewModel.swift in Sources */,
 				54BA8A452250B7FD00DB5632 /* RouterAssembly.swift in Sources */,
+				54BA8A922250C7C700DB5632 /* OverviewAssembly.swift in Sources */,
 				54BA8A782250C2F300DB5632 /* TextViewPopupWireframe.swift in Sources */,
 				54BA8A062250B09200DB5632 /* MealCollectionViewCellModel.swift in Sources */,
+				54BA8A942250C7C700DB5632 /* OverviewWireframe.swift in Sources */,
 				54BA89FA2250B09200DB5632 /* Row.swift in Sources */,
+				54BA8AA32250C7E900DB5632 /* NearbyVenuesRouterProtocol.swift in Sources */,
 				54BA8A092250B09200DB5632 /* NearbyMealsRouterProtocol.swift in Sources */,
 				54BA8A412250B77400DB5632 /* WireframeProtocol.swift in Sources */,
 				54BA8A7B2250C2F300DB5632 /* TextViewPopupAssembly.swift in Sources */,
 				54BA8A752250C2F300DB5632 /* TextViewPopupRouterProtocol.swift in Sources */,
+				54BA8A962250C7C700DB5632 /* OverviewPresenter.swift in Sources */,
 				54BA8A082250B09200DB5632 /* NearbyMealsAssembly.swift in Sources */,
 				54BA8A822250C3ED00DB5632 /* AboutRouterProtocol.swift in Sources */,
 				54BA8A022250B09200DB5632 /* NearbyMealsPresenter.swift in Sources */,
 				54BA8A0A2250B09200DB5632 /* NearbyMealsWireframe.swift in Sources */,
 				54BA8A262250B09200DB5632 /* MainViewController.swift in Sources */,
 				54BA8A462250B7FD00DB5632 /* Router.swift in Sources */,
+				54BA8A9A2250C7D600DB5632 /* SimpleFilterWireframe.swift in Sources */,
 				54BA8A792250C2F300DB5632 /* TextViewPopupModel.swift in Sources */,
 				54BA89FD2250B09200DB5632 /* SimpleTableViewCellModel.swift in Sources */,
 				54BA8A892250C55700DB5632 /* MealDetailsAssembly.swift in Sources */,
@@ -1134,21 +1175,32 @@
 				54BA8A2B2250B09200DB5632 /* AppDelegate.swift in Sources */,
 				54BA8A052250B09200DB5632 /* MealCollectionViewCell.swift in Sources */,
 				54BA89F72250B09200DB5632 /* TextTableViewCellModel.swift in Sources */,
+				54BA8AA42250C7E900DB5632 /* NearbyVenuesWireframe.swift in Sources */,
 				54BA89F82250B09200DB5632 /* TextTableViewCell.swift in Sources */,
 				54BA8A7F2250C3A600DB5632 /* R.generated.swift in Sources */,
+				54BA8A9D2250C7D600DB5632 /* SimpleFilterPresenter.swift in Sources */,
+				54BA8AA62250C7EE00DB5632 /* VenueCollectionViewCellModel.swift in Sources */,
+				54BA8A9F2250C7E900DB5632 /* NearbyVenuesAssembly.swift in Sources */,
 				54BA89FB2250B09200DB5632 /* ConfigurableCell.swift in Sources */,
 				54BA8A852250C3ED00DB5632 /* AboutWireframe.swift in Sources */,
 				54BA89F62250B09200DB5632 /* UIViewController+deinit.swift in Sources */,
+				54BA8AA12250C7E900DB5632 /* NearbyVenuesViewController.swift in Sources */,
 				54BA8A2C2250B09200DB5632 /* main.swift in Sources */,
+				54BA8A992250C7D600DB5632 /* SimpleFilterAssembly.swift in Sources */,
 				54BA8A802250C3ED00DB5632 /* AboutAssembly.swift in Sources */,
 				54BA8A8E2250C55700DB5632 /* MealDetailsViewController.swift in Sources */,
 				54BA8A812250C3ED00DB5632 /* AboutPresenter.swift in Sources */,
 				54BA8A292250B09200DB5632 /* Environment.swift in Sources */,
+				54BA8A9C2250C7D600DB5632 /* SimpleFilterViewController.swift in Sources */,
 				54BA8A042250B09200DB5632 /* NearbyMealsViewController.swift in Sources */,
+				54BA8AA82250C7EE00DB5632 /* VenueCollectionViewCell.swift in Sources */,
 				54BA8A282250B09200DB5632 /* MainAssembly.swift in Sources */,
 				54BA8A8B2250C55700DB5632 /* MealDetailsPresenter.swift in Sources */,
+				54BA8AA22250C7E900DB5632 /* NearbyVenuesPresenter.swift in Sources */,
 				54BA89FC2250B09200DB5632 /* SimpleTableViewCell.swift in Sources */,
+				54BA8A952250C7C700DB5632 /* OverviewViewController.swift in Sources */,
 				54BA8A872250C3ED00DB5632 /* AboutViewController.swift in Sources */,
+				54BA8A932250C7C700DB5632 /* OverviewRouterProtocol.swift in Sources */,
 				54BA8A8D2250C55700DB5632 /* MealDetailsWireframe.swift in Sources */,
 				54BA8A7A2250C2F300DB5632 /* TextViewPopupViewController.swift in Sources */,
 			);

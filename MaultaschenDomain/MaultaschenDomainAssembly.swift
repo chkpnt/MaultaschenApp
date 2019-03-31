@@ -28,6 +28,11 @@ public class MaultaschenDomainAssembly: Assembly {
                 imageService: r.resolve(ImageServiceProtocol.self)!
             )
         }
+        container.register(NearbyVenuesInteractorProtocol.self) { r in
+            return NearbyVenuesInteractor(
+                venueService: r.resolve(VenueServiceProtocol.self)!
+            )
+        }
     }
     
 //    private func assembleInternals(parent: Container) -> Resolver {

@@ -26,6 +26,10 @@ public class MaultaschenDataAssembly: Assembly {
             let localDb = internalResolver.resolve(LocalDatabaseProtocol.self)!
             return MealService(db: localDb)
         }
+        container.register(VenueServiceProtocol.self) { _ in
+            let localDb = internalResolver.resolve(LocalDatabaseProtocol.self)!
+            return VenueService(db: localDb)
+        }
         container.register(ImageServiceProtocol.self) { _ in
             return ImageService()
         }

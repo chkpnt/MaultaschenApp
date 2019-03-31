@@ -16,7 +16,7 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 3 images.
+  /// This `R.image` struct is generated, and contains static references to 6 images.
   struct image {
     /// Image `aboutTabBarIcon`.
     static let aboutTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "aboutTabBarIcon")
@@ -24,6 +24,12 @@ struct R: Rswift.Validatable {
     static let mealDetailsEditIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "mealDetailsEditIcon")
     /// Image `nearbyMealsTabBarIcon`.
     static let nearbyMealsTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "nearbyMealsTabBarIcon")
+    /// Image `nearbyVenuesTabBarIcon`.
+    static let nearbyVenuesTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "nearbyVenuesTabBarIcon")
+    /// Image `no_image`.
+    static let no_image = Rswift.ImageResource(bundle: R.hostingBundle, name: "no_image")
+    /// Image `overviewTabBarIcon`.
+    static let overviewTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "overviewTabBarIcon")
     
     /// `UIImage(named: "aboutTabBarIcon", bundle: ..., traitCollection: ...)`
     static func aboutTabBarIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
@@ -40,15 +46,32 @@ struct R: Rswift.Validatable {
       return UIKit.UIImage(resource: R.image.nearbyMealsTabBarIcon, compatibleWith: traitCollection)
     }
     
+    /// `UIImage(named: "nearbyVenuesTabBarIcon", bundle: ..., traitCollection: ...)`
+    static func nearbyVenuesTabBarIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.nearbyVenuesTabBarIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "no_image", bundle: ..., traitCollection: ...)`
+    static func no_image(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.no_image, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "overviewTabBarIcon", bundle: ..., traitCollection: ...)`
+    static func overviewTabBarIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.overviewTabBarIcon, compatibleWith: traitCollection)
+    }
+    
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 3 nibs.
   struct nib {
     /// Nib `MealCollectionViewCell`.
     static let mealCollectionViewCell = _R.nib._MealCollectionViewCell()
     /// Nib `TextTableViewCell`.
     static let textTableViewCell = _R.nib._TextTableViewCell()
+    /// Nib `VenueCollectionViewCell`.
+    static let venueCollectionViewCell = _R.nib._VenueCollectionViewCell()
     
     /// `UINib(name: "MealCollectionViewCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.mealCollectionViewCell) instead")
@@ -62,6 +85,12 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.textTableViewCell)
     }
     
+    /// `UINib(name: "VenueCollectionViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.venueCollectionViewCell) instead")
+    static func venueCollectionViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.venueCollectionViewCell)
+    }
+    
     static func mealCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MealCollectionViewCell? {
       return R.nib.mealCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MealCollectionViewCell
     }
@@ -70,23 +99,31 @@ struct R: Rswift.Validatable {
       return R.nib.textTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TextTableViewCell
     }
     
-    fileprivate init() {}
-  }
-  
-  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
-  struct reuseIdentifier {
-    /// Reuse identifier `MealCollectionViewCell`.
-    static let mealCollectionViewCell: Rswift.ReuseIdentifier<MealCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MealCollectionViewCell")
+    static func venueCollectionViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> VenueCollectionViewCell? {
+      return R.nib.venueCollectionViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? VenueCollectionViewCell
+    }
     
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 2 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `MealCollectionViewCell`.
+    static let mealCollectionViewCell: Rswift.ReuseIdentifier<MealCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "MealCollectionViewCell")
+    /// Reuse identifier `VenueCollectionViewCell`.
+    static let venueCollectionViewCell: Rswift.ReuseIdentifier<VenueCollectionViewCell> = Rswift.ReuseIdentifier(identifier: "VenueCollectionViewCell")
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
   struct storyboard {
     /// Storyboard `About`.
     static let about = _R.storyboard.about()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
+    /// Storyboard `SimpleFilter`.
+    static let simpleFilter = _R.storyboard.simpleFilter()
     /// Storyboard `TextViewPopup`.
     static let textViewPopup = _R.storyboard.textViewPopup()
     
@@ -100,6 +137,11 @@ struct R: Rswift.Validatable {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
     }
     
+    /// `UIStoryboard(name: "SimpleFilter", bundle: ...)`
+    static func simpleFilter(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.simpleFilter)
+    }
+    
     /// `UIStoryboard(name: "TextViewPopup", bundle: ...)`
     static func textViewPopup(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.textViewPopup)
@@ -108,7 +150,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 4 localization tables.
   struct string {
     /// This `R.string.about` struct is generated, and contains static references to 5 localization keys.
     struct about {
@@ -169,6 +211,19 @@ struct R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    /// This `R.string.overview` struct is generated, and contains static references to 1 localization keys.
+    struct overview {
+      /// Value: Overview
+      static let tabBarItemTitle = Rswift.StringResource(key: "TabBarItemTitle", tableName: "Overview", bundle: R.hostingBundle, locales: [], comment: nil)
+      
+      /// Value: Overview
+      static func tabBarItemTitle(_: Void = ()) -> String {
+        return NSLocalizedString("TabBarItemTitle", tableName: "Overview", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -188,9 +243,14 @@ struct R: Rswift.Validatable {
 struct _R: Rswift.Validatable {
   static func validate() throws {
     try storyboard.validate()
+    try nib.validate()
   }
   
-  struct nib {
+  struct nib: Rswift.Validatable {
+    static func validate() throws {
+      try _VenueCollectionViewCell.validate()
+    }
+    
     struct _MealCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
       typealias ReusableType = MealCollectionViewCell
       
@@ -216,6 +276,26 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
+    struct _VenueCollectionViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType, Rswift.Validatable {
+      typealias ReusableType = VenueCollectionViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "VenueCollectionViewCell"
+      let name = "VenueCollectionViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> VenueCollectionViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? VenueCollectionViewCell
+      }
+      
+      static func validate() throws {
+        if UIKit.UIImage(named: "no_image", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'no_image' is used in nib 'VenueCollectionViewCell', but couldn't be loaded.") }
+        if #available(iOS 11.0, *) {
+        }
+      }
+      
+      fileprivate init() {}
+    }
+    
     fileprivate init() {}
   }
   
@@ -223,6 +303,7 @@ struct _R: Rswift.Validatable {
     static func validate() throws {
       try about.validate()
       try launchScreen.validate()
+      try simpleFilter.validate()
       try textViewPopup.validate()
     }
     
@@ -253,6 +334,24 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct simpleFilter: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "SimpleFilter"
+      let simpleFilterViewController = StoryboardViewControllerResource<SimpleFilterViewController>(identifier: "SimpleFilterViewController")
+      
+      func simpleFilterViewController(_: Void = ()) -> SimpleFilterViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: simpleFilterViewController)
+      }
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.simpleFilter().simpleFilterViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'simpleFilterViewController' could not be loaded from storyboard 'SimpleFilter' as 'SimpleFilterViewController'.") }
       }
       
       fileprivate init() {}

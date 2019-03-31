@@ -14,10 +14,10 @@ class RouterAssembly: Assembly {
     func assemble(container: Container) {
         container.register(Router.self) { resolver in Router(serviceLocator: resolver) }
             .inObjectScope(.container)  // -> Singleton
-//            .implements(OverviewRouterProtocol.self)
+            .implements(OverviewRouterProtocol.self)
             .implements(NearbyMealsRouterProtocol.self)
             .implements(MealDetailsRouterProtocol.self)
-//            .implements(NearbyVenuesRouterProtocol.self)
+            .implements(NearbyVenuesRouterProtocol.self)
             .implements(AboutRouterProtocol.self)
             .implements(TextViewPopupRouterProtocol.self)
     }

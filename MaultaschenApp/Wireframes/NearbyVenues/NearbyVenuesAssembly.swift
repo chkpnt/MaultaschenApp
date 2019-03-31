@@ -8,16 +8,15 @@
 
 import Foundation
 import Swinject
-import MaultaschenData
+import MaultaschenDomain
 
 class NearbyVenuesAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(NearbyVenuesWireframeProtocol.self) { r in
-            let venueRepository = r.resolve(VenueRepositoryProtocol.self)!
             let router = r.resolve(NearbyVenuesRouterProtocol.self)!
+            let interactor = r.resolve(NearbyVenuesInteractorProtocol.self)!
             
-            let interactor = NearbyVenuesInteractor(venueRepository: venueRepository)
             let presenter = NearbyVenuesPresenter(interactor: interactor, router: router)
             let viewController = NearbyVenuesViewController(presenter: presenter)
             

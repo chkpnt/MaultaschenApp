@@ -59,7 +59,7 @@ extension Router: TextViewPopupRouterProtocol {
 }
 
 extension Router: MealDetailsRouterProtocol {}
-//
-//extension Router: NearbyVenuesRouterProtocol {}
-//
-//extension Router: OverviewRouterProtocol {}
+
+extension Router: NearbyVenuesRouterProtocol {}
+
+extension Router: OverviewRouterProtocol {}

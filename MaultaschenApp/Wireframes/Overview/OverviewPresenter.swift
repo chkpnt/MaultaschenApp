@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MaultaschenData
+import MaultaschenDomain
 
 protocol OverviewPresenterProtocol: class {
     func viewDidLoad()
