@@ -16,7 +16,7 @@ class RouterAssembly: Assembly {
             .inObjectScope(.container)  // -> Singleton
 //            .implements(OverviewRouterProtocol.self)
             .implements(NearbyMealsRouterProtocol.self)
-//            .implements(MealDetailsRouterProtocol.self)
+            .implements(MealDetailsRouterProtocol.self)
 //            .implements(NearbyVenuesRouterProtocol.self)
             .implements(AboutRouterProtocol.self)
             .implements(TextViewPopupRouterProtocol.self)

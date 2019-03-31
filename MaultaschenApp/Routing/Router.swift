@@ -25,9 +25,9 @@ class Router {
 extension Router: NearbyMealsRouterProtocol {
     
     func showDetails(for meal: Meal) {
-//        let wireframe = serviceLocator.resolve(MealDetailsWireframeProtocol.self)!
-//        wireframe.show(meal: meal)
-//        UIApplication.topViewController()?.navigationController?.pushViewController(wireframe.viewController, animated: true)
+        let wireframe = serviceLocator.resolve(MealDetailsWireframeProtocol.self)!
+        wireframe.show(meal: meal)
+        UIApplication.topViewController()?.navigationController?.pushViewController(wireframe.viewController, animated: true)
     }
     
 }
@@ -57,8 +57,8 @@ extension Router: TextViewPopupRouterProtocol {
     }
 
 }
-//
-//extension Router: MealDetailsRouterProtocol {}
+
+extension Router: MealDetailsRouterProtocol {}
 //
 //extension Router: NearbyVenuesRouterProtocol {}
 //

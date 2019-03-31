@@ -16,16 +16,23 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 2 images.
+  /// This `R.image` struct is generated, and contains static references to 3 images.
   struct image {
     /// Image `aboutTabBarIcon`.
     static let aboutTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "aboutTabBarIcon")
+    /// Image `mealDetailsEditIcon`.
+    static let mealDetailsEditIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "mealDetailsEditIcon")
     /// Image `nearbyMealsTabBarIcon`.
     static let nearbyMealsTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "nearbyMealsTabBarIcon")
     
     /// `UIImage(named: "aboutTabBarIcon", bundle: ..., traitCollection: ...)`
     static func aboutTabBarIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.aboutTabBarIcon, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "mealDetailsEditIcon", bundle: ..., traitCollection: ...)`
+    static func mealDetailsEditIcon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.mealDetailsEditIcon, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "nearbyMealsTabBarIcon", bundle: ..., traitCollection: ...)`
@@ -101,7 +108,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
   struct string {
     /// This `R.string.about` struct is generated, and contains static references to 5 localization keys.
     struct about {
@@ -141,6 +148,11 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("ThanksForReview", tableName: "About", bundle: R.hostingBundle, comment: "")
       }
       
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.mealDetails` struct is generated, and contains static references to 0 localization keys.
+    struct mealDetails {
       fileprivate init() {}
     }
     

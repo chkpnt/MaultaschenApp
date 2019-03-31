@@ -90,6 +90,14 @@
 		54BA8A862250C3ED00DB5632 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89C72250B09200DB5632 /* About.storyboard */; };
 		54BA8A872250C3ED00DB5632 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89C82250B09200DB5632 /* AboutViewController.swift */; };
 		54BA8A882250C3ED00DB5632 /* About.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89C92250B09200DB5632 /* About.xcassets */; };
+		54BA8A892250C55700DB5632 /* MealDetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA899E2250B09200DB5632 /* MealDetailsAssembly.swift */; };
+		54BA8A8B2250C55700DB5632 /* MealDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA899D2250B09200DB5632 /* MealDetailsPresenter.swift */; };
+		54BA8A8C2250C55700DB5632 /* MealDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89A02250B09200DB5632 /* MealDetailsRouter.swift */; };
+		54BA8A8D2250C55700DB5632 /* MealDetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89A12250B09200DB5632 /* MealDetailsWireframe.swift */; };
+		54BA8A8E2250C55700DB5632 /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89A22250B09200DB5632 /* MealDetailsViewController.swift */; };
+		54BA8A8F2250C55700DB5632 /* MealDetails.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA899F2250B09200DB5632 /* MealDetails.xcassets */; };
+		54BA8A902250C55700DB5632 /* MealDetails.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89A32250B09200DB5632 /* MealDetails.strings */; };
+		54BA8A912250C59800DB5632 /* MealDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */; };
 		54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F6041B2250AB42003EAFFC /* Assets.xcassets */; };
 		54F6042A2250AB42003EAFFC /* MaultaschenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */; };
 /* End PBXBuildFile section */
@@ -397,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				54BA8A342250B2C700DB5632 /* Meal.swift */,
+				54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */,
 				54BA89BF2250B09200DB5632 /* NearbyMealsInteractor.swift */,
 				54BA8A382250B37200DB5632 /* MealServiceProtocol.swift */,
 			);
@@ -443,13 +452,12 @@
 		54BA899B2250B09200DB5632 /* MealDetails */ = {
 			isa = PBXGroup;
 			children = (
-				54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */,
-				54BA899D2250B09200DB5632 /* MealDetailsPresenter.swift */,
 				54BA899E2250B09200DB5632 /* MealDetailsAssembly.swift */,
-				54BA899F2250B09200DB5632 /* MealDetails.xcassets */,
+				54BA899D2250B09200DB5632 /* MealDetailsPresenter.swift */,
 				54BA89A02250B09200DB5632 /* MealDetailsRouter.swift */,
 				54BA89A12250B09200DB5632 /* MealDetailsWireframe.swift */,
 				54BA89A22250B09200DB5632 /* MealDetailsViewController.swift */,
+				54BA899F2250B09200DB5632 /* MealDetails.xcassets */,
 				54BA89A32250B09200DB5632 /* MealDetails.strings */,
 			);
 			path = MealDetails;
@@ -501,14 +509,14 @@
 		54BA89B32250B09200DB5632 /* NearbyMeals */ = {
 			isa = PBXGroup;
 			children = (
-				54BA89B42250B09200DB5632 /* NearbyMeals.xcassets */,
-				54BA89B52250B09200DB5632 /* NearbyMealsPresenter.swift */,
-				54BA89B62250B09200DB5632 /* NearbyMeals.strings */,
-				54BA89B72250B09200DB5632 /* NearbyMealsViewController.swift */,
 				54BA89B82250B09200DB5632 /* MealCollectionViewCell */,
 				54BA89BC2250B09200DB5632 /* NearbyMealsAssembly.swift */,
+				54BA89B52250B09200DB5632 /* NearbyMealsPresenter.swift */,
+				54BA89B72250B09200DB5632 /* NearbyMealsViewController.swift */,
 				54BA89BD2250B09200DB5632 /* NearbyMealsRouterProtocol.swift */,
 				54BA89BE2250B09200DB5632 /* NearbyMealsWireframe.swift */,
+				54BA89B42250B09200DB5632 /* NearbyMeals.xcassets */,
+				54BA89B62250B09200DB5632 /* NearbyMeals.strings */,
 			);
 			path = NearbyMeals;
 			sourceTree = "<group>";
@@ -954,7 +962,9 @@
 			files = (
 				54BA8A842250C3ED00DB5632 /* About.strings in Resources */,
 				54BA8A032250B09200DB5632 /* NearbyMeals.strings in Resources */,
+				54BA8A8F2250C55700DB5632 /* MealDetails.xcassets in Resources */,
 				54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */,
+				54BA8A902250C55700DB5632 /* MealDetails.strings in Resources */,
 				54BA89F92250B09200DB5632 /* TextTableViewCell.xib in Resources */,
 				54BA8A2A2250B09200DB5632 /* LaunchScreen.storyboard in Resources */,
 				54BA8A882250C3ED00DB5632 /* About.xcassets in Resources */,
@@ -1053,6 +1063,7 @@
 				54BA8A362250B2C700DB5632 /* Meal.swift in Sources */,
 				54BA8A3C2250B3B800DB5632 /* ImageServiceProtocol.swift in Sources */,
 				54BA8A392250B37200DB5632 /* MealServiceProtocol.swift in Sources */,
+				54BA8A912250C59800DB5632 /* MealDetailsInteractor.swift in Sources */,
 				54BA8A352250B2C700DB5632 /* Venue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1099,6 +1110,7 @@
 				54BA8A002250B09200DB5632 /* WithStaticReuseIdentifier.swift in Sources */,
 				54BA8A832250C3ED00DB5632 /* AboutViewModel.swift in Sources */,
 				54BA8A272250B09200DB5632 /* MainWireframe.swift in Sources */,
+				54BA8A8C2250C55700DB5632 /* MealDetailsRouter.swift in Sources */,
 				54BA89FF2250B09200DB5632 /* Observable.swift in Sources */,
 				54BA8A762250C2F300DB5632 /* TextViewPopupViewModel.swift in Sources */,
 				54BA8A452250B7FD00DB5632 /* RouterAssembly.swift in Sources */,
@@ -1117,6 +1129,7 @@
 				54BA8A462250B7FD00DB5632 /* Router.swift in Sources */,
 				54BA8A792250C2F300DB5632 /* TextViewPopupModel.swift in Sources */,
 				54BA89FD2250B09200DB5632 /* SimpleTableViewCellModel.swift in Sources */,
+				54BA8A892250C55700DB5632 /* MealDetailsAssembly.swift in Sources */,
 				54BA89FE2250B09200DB5632 /* UIApplication+topViewController.swift in Sources */,
 				54BA8A2B2250B09200DB5632 /* AppDelegate.swift in Sources */,
 				54BA8A052250B09200DB5632 /* MealCollectionViewCell.swift in Sources */,
@@ -1128,12 +1141,15 @@
 				54BA89F62250B09200DB5632 /* UIViewController+deinit.swift in Sources */,
 				54BA8A2C2250B09200DB5632 /* main.swift in Sources */,
 				54BA8A802250C3ED00DB5632 /* AboutAssembly.swift in Sources */,
+				54BA8A8E2250C55700DB5632 /* MealDetailsViewController.swift in Sources */,
 				54BA8A812250C3ED00DB5632 /* AboutPresenter.swift in Sources */,
 				54BA8A292250B09200DB5632 /* Environment.swift in Sources */,
 				54BA8A042250B09200DB5632 /* NearbyMealsViewController.swift in Sources */,
 				54BA8A282250B09200DB5632 /* MainAssembly.swift in Sources */,
+				54BA8A8B2250C55700DB5632 /* MealDetailsPresenter.swift in Sources */,
 				54BA89FC2250B09200DB5632 /* SimpleTableViewCell.swift in Sources */,
 				54BA8A872250C3ED00DB5632 /* AboutViewController.swift in Sources */,
+				54BA8A8D2250C55700DB5632 /* MealDetailsWireframe.swift in Sources */,
 				54BA8A7A2250C2F300DB5632 /* TextViewPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

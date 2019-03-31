@@ -8,7 +8,7 @@
 
 import Foundation
 import os.log
-import MaultaschenData
+import MaultaschenDomain
 
 protocol MealDetailsPresenterProtocol: AnyObject {
     var mealTitleViewModel: TextTableViewCellModel { get }

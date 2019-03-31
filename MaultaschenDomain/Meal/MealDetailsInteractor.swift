@@ -7,30 +7,30 @@
 //
 
 import Foundation
-import MaultaschenData
 
 //sourcery: AutoMockable
-protocol MealDetailsInteractorProtocol: AnyObject {
+public protocol MealDetailsInteractorProtocol: AnyObject {
     func loadImage(forMeal: Meal)
     func save(meal: Meal)
 
+    func set(delegate: MealDetailsInteractorDelegate)
 }
 
 //sourcery: AutoMockable
-protocol MealDetailsInteractorDelegate: AnyObject {
+public protocol MealDetailsInteractorDelegate: AnyObject {
     func didLoad(image: UIImage, forMeal: Meal)
 }
 
 class MealDetailsInteractor: MealDetailsInteractorProtocol {
     
-    private let mealRepository: MealRepositoryProtocol
-    private let imageRepository: ImageRepositoryProtocol
+    private let mealService: MealServiceProtocol
+    private let imageService: ImageServiceProtocol
     private weak var delegate: MealDetailsInteractorDelegate?
     
-    init(mealRepository: MealRepositoryProtocol,
-         imageRepository: ImageRepositoryProtocol) {
-        self.mealRepository = mealRepository
-        self.imageRepository = imageRepository
+    init(mealService: MealServiceProtocol,
+         imageService: ImageServiceProtocol) {
+        self.mealService = mealService
+        self.imageService = imageService
     }
     
     func set(delegate: MealDetailsInteractorDelegate) {
@@ -38,12 +38,12 @@ class MealDetailsInteractor: MealDetailsInteractorProtocol {
     }
     
     func loadImage(forMeal meal: Meal) {
-        let image = imageRepository.getImage(for: meal)
+        let image = imageService.getImage(for: meal)
         delegate?.didLoad(image: image, forMeal: meal)
     }
     
     func save(meal: Meal) {
-        mealRepository.save(meal: meal)
+        mealService.save(meal: meal)
     }
 
 }

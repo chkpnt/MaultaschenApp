@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import MaultaschenData
+import MaultaschenDomain
 
 protocol MealDetailsWireframeProtocol: WireframeProtocol {
     func show(meal: Meal)

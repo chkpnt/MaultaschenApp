@@ -10,17 +10,15 @@ import Foundation
 import UIKit
 import Swinject
 import os.log
-import MaultaschenData
+import MaultaschenDomain
 
 public class MealDetailsAssembly: Assembly {
     
     public func assemble(container: Container) {
         container.register(MealDetailsWireframeProtocol.self) { r in
-            let mealRepository = r.resolve(MealRepositoryProtocol.self)!
-            let imageRepository = r.resolve(ImageRepositoryProtocol.self)!
             let router = r.resolve(MealDetailsRouterProtocol.self)!
-
-            let interactor = MealDetailsInteractor(mealRepository: mealRepository, imageRepository: imageRepository)
+            let interactor = r.resolve(MealDetailsInteractorProtocol.self)!
+            
             let presenter = MealDetailsPresenter(interactor: interactor)
             let viewController = MealDetailsViewController(presenter: presenter)
             

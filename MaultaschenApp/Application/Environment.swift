@@ -44,7 +44,7 @@ class Environment {
 //        assembler.apply(assembly: OverviewAssembly())
 //        assembler.apply(assembly: SimpleFilterAssembly())
         assembler.apply(assembly: NearbyMealsAssembly())
-//        assembler.apply(assembly: MealDetailsAssembly())
+        assembler.apply(assembly: MealDetailsAssembly())
 //        assembler.apply(assembly: NearbyVenuesAssembly())
         assembler.apply(assembly: AboutAssembly())
         assembler.apply(assembly: TextViewPopupAssembly())

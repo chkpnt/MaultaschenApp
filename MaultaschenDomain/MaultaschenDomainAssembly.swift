@@ -22,6 +22,12 @@ public class MaultaschenDomainAssembly: Assembly {
                 imageService: r.resolve(ImageServiceProtocol.self)!
             )
         }
+        container.register(MealDetailsInteractorProtocol.self) { r in
+            return MealDetailsInteractor(
+                mealService: r.resolve(MealServiceProtocol.self)!,
+                imageService: r.resolve(ImageServiceProtocol.self)!
+            )
+        }
     }
     
 //    private func assembleInternals(parent: Container) -> Resolver {
