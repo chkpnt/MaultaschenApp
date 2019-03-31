@@ -45,6 +45,7 @@ class OverviewViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         configureConstraints()
+        configureKeyboardToDismiss()
         presenter.viewDidLoad()
     }
     
@@ -81,6 +82,16 @@ class OverviewViewController: UIViewController {
         stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor).isActive = true
         stackView.widthAnchor.constraint(equalTo: scrollView.widthAnchor).isActive = true
+    }
+    
+    private func configureKeyboardToDismiss() {
+        let tapRecognizer = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
+        tapRecognizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(tapRecognizer)
+        
+        let swipeRecognizer = UISwipeGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
+        swipeRecognizer.cancelsTouchesInView = false
+        view.addGestureRecognizer(swipeRecognizer)
     }
     
     private func add(_ child: UIViewController, height: CGFloat? = nil) {

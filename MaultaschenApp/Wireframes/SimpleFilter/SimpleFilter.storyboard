@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="303" height="44"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                         <connections>
                                             <action selector="didChangeText:" destination="bqw-w5-WeL" eventType="editingChanged" id="gu5-O9-ZwY"/>
                                         </connections>
@@ -50,6 +50,9 @@
                         <viewLayoutGuide key="safeArea" id="WzN-WF-Mh8"/>
                     </view>
                     <size key="freeformSize" width="375" height="60"/>
+                    <connections>
+                        <outlet property="filterTextField" destination="kS0-iV-NkJ" id="DDQ-ly-Ukz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YjE-OE-ERD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
