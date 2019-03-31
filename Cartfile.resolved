@@ -1,0 +1,4 @@
+github "MakeAWishFoundation/SwiftyMocky" "3.1.1"
+github "Swinject/Swinject" "2.6.0"
+github "mac-cain13/R.swift.Library" "v5.0.0"
+github "realm/realm-cocoa" "v3.13.1"
