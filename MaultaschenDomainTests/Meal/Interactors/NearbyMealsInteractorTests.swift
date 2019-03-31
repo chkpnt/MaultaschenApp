@@ -27,8 +27,8 @@ class NearbyMealsInteractorTests: XCTestCase {
     }
     
     func testFindMeals() {
-        let meal1 = Meal(id: "m1", venue: nil); let image1 = UIImage()
-        let meal2 = Meal(id: "m2", venue: nil); let image2 = UIImage()
+        let meal1 = Meal(id: "m1"); let image1 = UIImage()
+        let meal2 = Meal(id: "m2"); let image2 = UIImage()
         Given(mealService, .getAllMeals(willReturn: [meal1, meal2]))
         Given(imageService, .getImage(for: .matching({ $0 === meal1}), willReturn: image1))
         Given(imageService, .getImage(for: .matching({ $0 === meal2}), willReturn: image2))

@@ -30,7 +30,7 @@ class MealDetailsInteractorTests: XCTestCase {
     }
     
     func testTestLoadImage() {
-        let meal = Meal(id: "m", venue: nil); let expectedImage = UIImage()
+        let meal = Meal(id: "m"); let expectedImage = UIImage()
         Given(imageService, .getImage(for: .any, willReturn: expectedImage))
         
         sut.loadImage(forMeal: meal)
@@ -39,7 +39,7 @@ class MealDetailsInteractorTests: XCTestCase {
     }
     
     func testSave() {
-        let meal = Meal(id: "m", venue: nil)
+        let meal = Meal(id: "m")
         
         sut.save(meal: meal)
         

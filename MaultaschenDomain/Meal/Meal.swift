@@ -20,4 +20,8 @@ public class Meal {
         self.venue = venue ?? Venue()
     }
     
+    public convenience init(id: String) {
+        self.init(id: id, venue: nil)
+    }
+    
 }

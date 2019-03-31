@@ -1,0 +1,16 @@
+sources:
+  include:
+    - ../../MaultaschenData
+    - ../../MaultaschenDomain
+templates:
+  - ../../Carthage/Checkouts/SwiftyMocky/Sources/Templates
+output:
+  ./
+args:
+  testable:
+    - MaultaschenData
+  import:
+    - CoreLocation
+    - MaultaschenDomain
+cacheBasePath:
+  ./cache
