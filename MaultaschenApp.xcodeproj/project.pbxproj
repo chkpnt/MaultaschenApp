@@ -912,14 +912,12 @@
 					};
 					54BA894E2250ACBC00DB5632 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 54F604102250AB3E003EAFFC;
 					};
 					54BA89692250AD8200DB5632 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					54BA89712250AD8200DB5632 = {
 						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 54F604102250AB3E003EAFFC;
 					};
 					54F604102250AB3E003EAFFC = {
 						CreatedOnToolsVersion = 10.1;
@@ -1354,7 +1352,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
 			};
 			name = Debug;
 		};
@@ -1374,7 +1371,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
 			};
 			name = Release;
 		};
@@ -1458,7 +1454,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
 			};
 			name = Debug;
 		};
@@ -1478,7 +1473,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
 			};
 			name = Release;
 		};
