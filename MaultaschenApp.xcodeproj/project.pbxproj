@@ -70,6 +70,8 @@
 		54BA8A632250BDBF00DB5632 /* MealService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A602250BDBF00DB5632 /* MealService.swift */; };
 		54BA8A642250BDBF00DB5632 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A612250BDBF00DB5632 /* ImageService.swift */; };
 		54BA8A662250BE8500DB5632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8A652250BE8500DB5632 /* Assets.xcassets */; };
+		54BA8A692250C04C00DB5632 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A682250C04C00DB5632 /* R.generated.swift */; };
+		54BA8A6B2250C11900DB5632 /* LocalDatabaseBootstrapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A6A2250C11900DB5632 /* LocalDatabaseBootstrapProtocol.swift */; };
 		54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F6041B2250AB42003EAFFC /* Assets.xcassets */; };
 		54F6042A2250AB42003EAFFC /* MaultaschenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */; };
 /* End PBXBuildFile section */
@@ -253,6 +255,8 @@
 		54BA8A602250BDBF00DB5632 /* MealService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealService.swift; sourceTree = "<group>"; };
 		54BA8A612250BDBF00DB5632 /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		54BA8A652250BE8500DB5632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54BA8A682250C04C00DB5632 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		54BA8A6A2250C11900DB5632 /* LocalDatabaseBootstrapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseBootstrapProtocol.swift; sourceTree = "<group>"; };
 		54F604112250AB3E003EAFFC /* MaultaschenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaultaschenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6041B2250AB42003EAFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F604202250AB42003EAFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -345,6 +349,7 @@
 				54BA8A4B2250B92000DB5632 /* LocalDatabase */,
 				54BA8A4A2250B8D600DB5632 /* Services */,
 				54BA8A5D2250BD4800DB5632 /* MaultaschenDataAssembly.swift */,
+				54BA8A682250C04C00DB5632 /* R.generated.swift */,
 				54BA8A652250BE8500DB5632 /* Assets.xcassets */,
 				54BA896C2250AD8200DB5632 /* MaultaschenData.h */,
 				54BA896D2250AD8200DB5632 /* Info.plist */,
@@ -609,6 +614,7 @@
 			children = (
 				54BA8A4C2250B92000DB5632 /* RealmModels */,
 				54BA8A512250B92000DB5632 /* LocalDatabaseProtocol.swift */,
+				54BA8A6A2250C11900DB5632 /* LocalDatabaseBootstrapProtocol.swift */,
 				54BA8A522250B92000DB5632 /* RealmDatabase.swift */,
 			);
 			path = LocalDatabase;
@@ -736,6 +742,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54BA89812250AD8200DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenData" */;
 			buildPhases = (
+				54BA8A672250C02300DB5632 /* R.swift */,
 				54BA89652250AD8200DB5632 /* Headers */,
 				54BA89662250AD8200DB5632 /* Sources */,
 				54BA89672250AD8200DB5632 /* Frameworks */,
@@ -945,6 +952,26 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
+		54BA8A672250C02300DB5632 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/MaultaschenData/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/Tools/rswift-5.0.3/rswift\" generate \"$SRCROOT/MaultaschenData/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -973,6 +1000,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA8A6B2250C11900DB5632 /* LocalDatabaseBootstrapProtocol.swift in Sources */,
 				54BA8A552250B92000DB5632 /* VenueEntity.swift in Sources */,
 				54BA8A542250B92000DB5632 /* MealEntityMapper.swift in Sources */,
 				54BA8A5E2250BD4800DB5632 /* MaultaschenDataAssembly.swift in Sources */,
@@ -980,6 +1008,7 @@
 				54BA8A532250B92000DB5632 /* MealEntity.swift in Sources */,
 				54BA8A572250B92000DB5632 /* LocalDatabaseProtocol.swift in Sources */,
 				54BA8A642250BDBF00DB5632 /* ImageService.swift in Sources */,
+				54BA8A692250C04C00DB5632 /* R.generated.swift in Sources */,
 				54BA8A632250BDBF00DB5632 /* MealService.swift in Sources */,
 				54BA8A562250B92000DB5632 /* VenueEntityMapper.swift in Sources */,
 			);

@@ -19,9 +19,15 @@ public class MaultaschenDataAssembly: Assembly {
     public func assemble(container: Container) {
         let internalResolver = assembleInternals(parent: container)
         
+        container.register(LocalDatabaseBootstrapProtocol.self) { _ in
+            return internalResolver.resolve(LocalDatabaseBootstrapProtocol.self)!
+        }
         container.register(MealServiceProtocol.self) { _ in
             let localDb = internalResolver.resolve(LocalDatabaseProtocol.self)!
             return MealService(db: localDb)
+        }
+        container.register(ImageServiceProtocol.self) { _ in
+            return ImageService()
         }
     }
     
@@ -37,7 +43,7 @@ public class MaultaschenDataAssembly: Assembly {
             let mealMapper = r.resolve(MealEntityMapperProtocol.self)!
             let venueMapper = r.resolve(VenueEntityMapperProtocol.self)!
             return RealmDatabase(mealEntityMapper: mealMapper, venueEntityMapper: venueMapper)
-        }
+        }.implements(LocalDatabaseBootstrapProtocol.self)
         
         return internalContainer
     }

@@ -12,7 +12,7 @@ import RealmSwift
 import CoreLocation
 import MaultaschenDomain
 
-class RealmDatabase: LocalDatabaseProtocol {
+class RealmDatabase {
     
     private let realm: Realm
     private let mealEntityMapper: MealEntityMapperProtocol
@@ -32,13 +32,9 @@ class RealmDatabase: LocalDatabaseProtocol {
         realm = try! Realm()
         os_log(.debug, "Using realm database: %@", String(describing: realm.configuration.fileURL?.absoluteString))
     }
-    
-    public func bootstrap() {
-        try! realm.write {
-            realm.deleteAll()
-            realm.add(demoModels())
-        }
-    }
+}
+
+extension RealmDatabase: LocalDatabaseProtocol {
     
     func findAllMeals() -> [Meal] {
         let meals: [Meal] = realm
@@ -60,6 +56,17 @@ class RealmDatabase: LocalDatabaseProtocol {
         try! realm.write {
             os_log(.debug, "Saving meal: %@", entity)
             realm.add(entity, update: true)
+        }
+    }
+}
+
+extension RealmDatabase: LocalDatabaseBootstrapProtocol {
+    
+    public func bootstrap() {
+        os_log(.debug, "Bootstrapping Realm Database")
+        try! realm.write {
+            realm.deleteAll()
+            realm.add(demoModels())
         }
     }
     

@@ -10,6 +10,7 @@ import Foundation
 import Swinject
 import os.log
 import MaultaschenDomain
+import MaultaschenData
 
 class Environment {
     
@@ -25,7 +26,7 @@ class Environment {
     
     func setup() {
         applyAssemblies()
-//        bootstrapLocalDatabase()
+        bootstrapLocalDatabase()
         
         mainWireframe = assembler.resolver.resolve(MainWireframeProtocol.self)!
         mainWireframe?.setAsRootView()
@@ -34,6 +35,9 @@ class Environment {
     private func applyAssemblies() {
         // Domain
         assembler.apply(assembly: MaultaschenDomainAssembly())
+        
+        // Data
+        assembler.apply(assembly: MaultaschenDataAssembly())
         
         // Wireframes
         assembler.apply(assembly: MainAssembly())
@@ -56,8 +60,8 @@ class Environment {
         os_log(.debug, "Available through Swinject Container: %@", String(describing: assembler.resolver))
     }
     
-//    private func bootstrapLocalDatabase() {
-//        let mealRepository = assembler.resolver.resolve(MealRepositoryProtocol.self)!
-//        mealRepository.bootstrap()
-//    }
+    private func bootstrapLocalDatabase() {
+        let localDb = assembler.resolver.resolve(LocalDatabaseBootstrapProtocol.self)!
+        localDb.bootstrap()
+    }
 }
