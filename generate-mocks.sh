@@ -7,6 +7,7 @@ while true
 do
     Tools/Sourcery-0.15.0/bin/Sourcery.app/Contents/MacOS/Sourcery --config MaultaschenDomainTests/Mocks/SwiftyMocky.yml
     Tools/Sourcery-0.15.0/bin/Sourcery.app/Contents/MacOS/Sourcery --config MaultaschenDataTests/Mocks/SwiftyMocky.yml
+    Tools/Sourcery-0.15.0/bin/Sourcery.app/Contents/MacOS/Sourcery --config MaultaschenAppTests/Mocks/SwiftyMocky.yml
 	sleep 5
 done
 
@@ -15,5 +16,6 @@ done
 ## I guess there is a caching issue.
 #Tools/Sourcery-0.15.0/bin/Sourcery.app/Contents/MacOS/Sourcery --config MaultaschenDomainTests/Mocks/SwiftyMocky.yml --watch --verbose &
 #Tools/Sourcery-0.15.0/bin/Sourcery.app/Contents/MacOS/Sourcery --config MaultaschenDataTests/Mocks/SwiftyMocky.yml--watch --verbose &
+#Tools/Sourcery-0.15.0/bin/Sourcery.app/Contents/MacOS/Sourcery --config MaultaschenAppTests/Mocks/SwiftyMocky.yml--watch --verbose &
 #wait
 

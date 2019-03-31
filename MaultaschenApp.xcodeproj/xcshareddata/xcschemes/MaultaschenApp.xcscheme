@@ -39,26 +39,6 @@
                ReferencedContainer = "container:MaultaschenApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54BA894E2250ACBC00DB5632"
-               BuildableName = "MaultaschenDomainTests.xctest"
-               BlueprintName = "MaultaschenDomainTests"
-               ReferencedContainer = "container:MaultaschenApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54BA89712250AD8200DB5632"
-               BuildableName = "MaultaschenDataTests.xctest"
-               BlueprintName = "MaultaschenDataTests"
-               ReferencedContainer = "container:MaultaschenApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

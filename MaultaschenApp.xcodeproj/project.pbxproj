@@ -117,7 +117,6 @@
 		54BA8AAB2250C86500DB5632 /* VenueServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AAA2250C86500DB5632 /* VenueServiceProtocol.swift */; };
 		54BA8AAC2250CA8400DB5632 /* VenueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8A5F2250BDBF00DB5632 /* VenueService.swift */; };
 		54BA8ABC2250D0EB00DB5632 /* NearbyMealsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AB62250D0EB00DB5632 /* NearbyMealsInteractorTests.swift */; };
-		54BA8AC12250D16400DB5632 /* SwiftyMocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; };
 		54BA8AC32250D18E00DB5632 /* SwiftyMocky.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54BA8AC62250D1E200DB5632 /* MaultaschenDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; };
 		54BA8B092250D2A300DB5632 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8AEA2250D2A300DB5632 /* Mock.generated.swift */; };
@@ -143,8 +142,15 @@
 		54BA8B6E2250FF2A00DB5632 /* ImageServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B6B2250FF2900DB5632 /* ImageServiceTests.swift */; };
 		54BA8B6F2250FF2A00DB5632 /* MealServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B6C2250FF2900DB5632 /* MealServiceTests.swift */; };
 		54BA8B702250FF2A00DB5632 /* RswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B6D2250FF2A00DB5632 /* RswiftTests.swift */; };
+		54BA8C1F2251068600DB5632 /* RswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B712251068500DB5632 /* RswiftTests.swift */; };
+		54BA8C202251068600DB5632 /* MealDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B742251068500DB5632 /* MealDetailsPresenterTests.swift */; };
+		54BA8C222251068600DB5632 /* NearbyMealsWireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B772251068500DB5632 /* NearbyMealsWireframeTests.swift */; };
+		54BA8C242251068600DB5632 /* NearbyMealsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8B792251068500DB5632 /* NearbyMealsPresenterTests.swift */; };
+		54BA8CC22251068600DB5632 /* Mock.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8C1D2251068600DB5632 /* Mock.generated.swift */; };
+		54BA8CC32251068600DB5632 /* SwiftyMocky.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8C1E2251068600DB5632 /* SwiftyMocky.yml */; };
+		54BA8CC62251079900DB5632 /* SwiftyMocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; };
+		54BA8CC7225107A800DB5632 /* SwiftyMocky.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F6041B2250AB42003EAFFC /* Assets.xcassets */; };
-		54F6042A2250AB42003EAFFC /* MaultaschenAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +234,17 @@
 			files = (
 				54BA8B612250FAB600DB5632 /* Swinject.framework in Copy Frameworks */,
 				54BA8B0C2250D41B00DB5632 /* SwiftyMocky.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA8CC42251076200DB5632 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54BA8CC7225107A800DB5632 /* SwiftyMocky.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,11 +380,16 @@
 		54BA8B6B2250FF2900DB5632 /* ImageServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageServiceTests.swift; sourceTree = "<group>"; };
 		54BA8B6C2250FF2900DB5632 /* MealServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealServiceTests.swift; sourceTree = "<group>"; };
 		54BA8B6D2250FF2A00DB5632 /* RswiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RswiftTests.swift; sourceTree = "<group>"; };
+		54BA8B712251068500DB5632 /* RswiftTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RswiftTests.swift; sourceTree = "<group>"; };
+		54BA8B742251068500DB5632 /* MealDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		54BA8B772251068500DB5632 /* NearbyMealsWireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMealsWireframeTests.swift; sourceTree = "<group>"; };
+		54BA8B792251068500DB5632 /* NearbyMealsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMealsPresenterTests.swift; sourceTree = "<group>"; };
+		54BA8C1D2251068600DB5632 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
+		54BA8C1E2251068600DB5632 /* SwiftyMocky.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyMocky.yml; sourceTree = "<group>"; };
 		54F604112250AB3E003EAFFC /* MaultaschenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaultaschenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6041B2250AB42003EAFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F604202250AB42003EAFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F604252250AB42003EAFFC /* MaultaschenAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaultaschenAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaultaschenAppTests.swift; sourceTree = "<group>"; };
 		54F6042B2250AB42003EAFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -404,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BA8AC62250D1E200DB5632 /* MaultaschenDomain.framework in Frameworks */,
-				54BA8AC12250D16400DB5632 /* SwiftyMocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +444,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA8CC62251079900DB5632 /* SwiftyMocky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -840,6 +862,41 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		54BA8B722251068500DB5632 /* Wireframes */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8B732251068500DB5632 /* MealDetails */,
+				54BA8B762251068500DB5632 /* NearbyMeals */,
+			);
+			path = Wireframes;
+			sourceTree = "<group>";
+		};
+		54BA8B732251068500DB5632 /* MealDetails */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8B742251068500DB5632 /* MealDetailsPresenterTests.swift */,
+			);
+			path = MealDetails;
+			sourceTree = "<group>";
+		};
+		54BA8B762251068500DB5632 /* NearbyMeals */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8B772251068500DB5632 /* NearbyMealsWireframeTests.swift */,
+				54BA8B792251068500DB5632 /* NearbyMealsPresenterTests.swift */,
+			);
+			path = NearbyMeals;
+			sourceTree = "<group>";
+		};
+		54BA8B7A2251068600DB5632 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8C1D2251068600DB5632 /* Mock.generated.swift */,
+				54BA8C1E2251068600DB5632 /* SwiftyMocky.yml */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		54F604082250AB3E003EAFFC = {
 			isa = PBXGroup;
 			children = (
@@ -883,7 +940,9 @@
 		54F604282250AB42003EAFFC /* MaultaschenAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				54F604292250AB42003EAFFC /* MaultaschenAppTests.swift */,
+				54BA8B7A2251068600DB5632 /* Mocks */,
+				54BA8B722251068500DB5632 /* Wireframes */,
+				54BA8B712251068500DB5632 /* RswiftTests.swift */,
 				54F6042B2250AB42003EAFFC /* Info.plist */,
 			);
 			path = MaultaschenAppTests;
@@ -1016,6 +1075,7 @@
 				54F604212250AB42003EAFFC /* Sources */,
 				54F604222250AB42003EAFFC /* Frameworks */,
 				54F604232250AB42003EAFFC /* Resources */,
+				54BA8CC42251076200DB5632 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1142,6 +1202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA8CC32251068600DB5632 /* SwiftyMocky.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,7 +1411,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F6042A2250AB42003EAFFC /* MaultaschenAppTests.swift in Sources */,
+				54BA8C222251068600DB5632 /* NearbyMealsWireframeTests.swift in Sources */,
+				54BA8C202251068600DB5632 /* MealDetailsPresenterTests.swift in Sources */,
+				54BA8C1F2251068600DB5632 /* RswiftTests.swift in Sources */,
+				54BA8CC22251068600DB5632 /* Mock.generated.swift in Sources */,
+				54BA8C242251068600DB5632 /* NearbyMealsPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1798,6 +1863,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MaultaschenAppTests/Mocks/cache/Sourcery",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MaultaschenAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1819,6 +1889,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MaultaschenAppTests/Mocks/cache/Sourcery",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MaultaschenAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
