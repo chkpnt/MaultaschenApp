@@ -2,20 +2,20 @@
 //  AppDelegate.swift
 //  MaultaschenApp
 //
-//  Created by Gregor Dschung on 31.03.19.
+//  Created by Gregor Dschung on 24.02.19.
 //  Copyright © 2019 Gregor Dschung. All rights reserved.
 //
 
 import UIKit
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Environment.instance.setup()
+        
         return true
     }
 
