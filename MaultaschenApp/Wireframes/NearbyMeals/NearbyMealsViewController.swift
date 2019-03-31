@@ -43,7 +43,10 @@ class NearbyMealsViewController: UICollectionViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter.findMeals()
+        
+        let indexPaths = collectionView.indexPathsForSelectedItems ?? []
+        indexPaths.map { collectionView.cellForItem(at: $0) }
+            .forEach { $0?.shrink() }
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -68,6 +71,9 @@ class NearbyMealsViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.grow()
+        
         let mealModel = meals[indexPath.row]
         presenter.didTap(meal: mealModel)
     }

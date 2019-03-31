@@ -150,6 +150,8 @@
 		54BA8CC32251068600DB5632 /* SwiftyMocky.yml in Resources */ = {isa = PBXBuildFile; fileRef = 54BA8C1E2251068600DB5632 /* SwiftyMocky.yml */; };
 		54BA8CC62251079900DB5632 /* SwiftyMocky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; };
 		54BA8CC7225107A800DB5632 /* SwiftyMocky.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA8AC02250D16300DB5632 /* SwiftyMocky.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA8CCA2251115000DB5632 /* UICollectionViewCell+grow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8CC92251115000DB5632 /* UICollectionViewCell+grow.swift */; };
+		54BA8CCC2251118700DB5632 /* UICollectionViewCell+shrink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA8CCB2251118700DB5632 /* UICollectionViewCell+shrink.swift */; };
 		54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54F6041B2250AB42003EAFFC /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -386,6 +388,8 @@
 		54BA8B792251068500DB5632 /* NearbyMealsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMealsPresenterTests.swift; sourceTree = "<group>"; };
 		54BA8C1D2251068600DB5632 /* Mock.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mock.generated.swift; sourceTree = "<group>"; };
 		54BA8C1E2251068600DB5632 /* SwiftyMocky.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyMocky.yml; sourceTree = "<group>"; };
+		54BA8CC92251115000DB5632 /* UICollectionViewCell+grow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+grow.swift"; sourceTree = "<group>"; };
+		54BA8CCB2251118700DB5632 /* UICollectionViewCell+shrink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+shrink.swift"; sourceTree = "<group>"; };
 		54F604112250AB3E003EAFFC /* MaultaschenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaultaschenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F6041B2250AB42003EAFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54F604202250AB42003EAFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -567,6 +571,7 @@
 		54BA89A42250B09200DB5632 /* commons */ = {
 			isa = PBXGroup;
 			children = (
+				54BA8CC82251113200DB5632 /* CollectionView */,
 				54BA89A62250B09200DB5632 /* TableView */,
 				54BA89A52250B09200DB5632 /* UIViewController+deinit.swift */,
 				54BA89B02250B09200DB5632 /* UIApplication+topViewController.swift */,
@@ -895,6 +900,15 @@
 				54BA8C1E2251068600DB5632 /* SwiftyMocky.yml */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		54BA8CC82251113200DB5632 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				54BA8CC92251115000DB5632 /* UICollectionViewCell+grow.swift */,
+				54BA8CCB2251118700DB5632 /* UICollectionViewCell+shrink.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		54F604082250AB3E003EAFFC = {
@@ -1391,6 +1405,7 @@
 				54BA8A802250C3ED00DB5632 /* AboutAssembly.swift in Sources */,
 				54BA8A8E2250C55700DB5632 /* MealDetailsViewController.swift in Sources */,
 				54BA8A812250C3ED00DB5632 /* AboutPresenter.swift in Sources */,
+				54BA8CCC2251118700DB5632 /* UICollectionViewCell+shrink.swift in Sources */,
 				54BA8A292250B09200DB5632 /* Environment.swift in Sources */,
 				54BA8A9C2250C7D600DB5632 /* SimpleFilterViewController.swift in Sources */,
 				54BA8A042250B09200DB5632 /* NearbyMealsViewController.swift in Sources */,
@@ -1403,6 +1418,7 @@
 				54BA8A872250C3ED00DB5632 /* AboutViewController.swift in Sources */,
 				54BA8A932250C7C700DB5632 /* OverviewRouterProtocol.swift in Sources */,
 				54BA8A8D2250C55700DB5632 /* MealDetailsWireframe.swift in Sources */,
+				54BA8CCA2251115000DB5632 /* UICollectionViewCell+grow.swift in Sources */,
 				54BA8A7A2250C2F300DB5632 /* TextViewPopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
