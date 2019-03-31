@@ -28,16 +28,4 @@ class AboutAssembly: Assembly {
         }
     }
     
-//    func create(router: AboutRouterProtocol) -> AboutWireframe {
-//        let presenter = AboutPresenter(router: router)
-//        #if USE_R
-//        let viewController = R.storyboard.about.aboutViewController()!
-//        #else
-//        let storyboard = UIStoryboard(name: "About", bundle: nil)
-//        let viewController = storyboard.instantiateViewController(withIdentifier: "AboutViewController") as! AboutViewController
-//        #endif
-//        viewController.set(presenter: presenter)
-//        return AboutWireframe(viewController: viewController)
-//    }
-    
 }

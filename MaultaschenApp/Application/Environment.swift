@@ -46,10 +46,8 @@ class Environment {
         assembler.apply(assembly: NearbyMealsAssembly())
 //        assembler.apply(assembly: MealDetailsAssembly())
 //        assembler.apply(assembly: NearbyVenuesAssembly())
-//        assembler.apply(assembly: AboutAssembly())
-        
-        // Common Wireframes
-//        assembler.apply(assembly: TextViewPopupAssembly())
+        assembler.apply(assembly: AboutAssembly())
+        assembler.apply(assembly: TextViewPopupAssembly())
         
         // Routing
         assembler.apply(assembly: RouterAssembly())

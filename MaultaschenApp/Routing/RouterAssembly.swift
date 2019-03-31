@@ -18,7 +18,7 @@ class RouterAssembly: Assembly {
             .implements(NearbyMealsRouterProtocol.self)
 //            .implements(MealDetailsRouterProtocol.self)
 //            .implements(NearbyVenuesRouterProtocol.self)
-//            .implements(AboutRouterProtocol.self)
-//            .implements(TextViewPopupRouterProtocol.self)
+            .implements(AboutRouterProtocol.self)
+            .implements(TextViewPopupRouterProtocol.self)
     }
 }

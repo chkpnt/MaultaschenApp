@@ -32,31 +32,31 @@ extension Router: NearbyMealsRouterProtocol {
     
 }
 
-//extension Router: AboutRouterProtocol {
-//
-//    func showWriteReview() {
-//        let model = TextViewPopupModel(
-//            title: "Header",
-//            text: R.string.about.thanksForReview()
-//        )
-//
-//        let popupWireframe = serviceLocator.resolve(TextViewPopupWireframeProtocol.self)!
-//        popupWireframe.configure(withModel: model)
-//        let viewController = popupWireframe.viewController
-//        popup = viewController
-//        UIApplication.topViewController()?.present(viewController, animated: true, completion: nil)
-//    }
-//
-//}
-//
-//extension Router: TextViewPopupRouterProtocol {
-//
-//    func closePopup() {
-//        popup?.dismiss(animated: false, completion: nil)
-//        popup = nil
-//    }
-//
-//}
+extension Router: AboutRouterProtocol {
+
+    func showWriteReview() {
+        let model = TextViewPopupModel(
+            title: "Header",
+            text: R.string.about.thanksForReview()
+        )
+
+        let popupWireframe = serviceLocator.resolve(TextViewPopupWireframeProtocol.self)!
+        popupWireframe.configure(withModel: model)
+        let viewController = popupWireframe.viewController
+        popup = viewController
+        UIApplication.topViewController()?.present(viewController, animated: true, completion: nil)
+    }
+
+}
+
+extension Router: TextViewPopupRouterProtocol {
+
+    func closePopup() {
+        popup?.dismiss(animated: false, completion: nil)
+        popup = nil
+    }
+
+}
 //
 //extension Router: MealDetailsRouterProtocol {}
 //
