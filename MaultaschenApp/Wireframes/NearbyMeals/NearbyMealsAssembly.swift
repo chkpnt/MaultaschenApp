@@ -8,17 +8,15 @@
 
 import Foundation
 import Swinject
-import MaultaschenData
+import MaultaschenDomain
 
 class NearbyMealsAssembly: Assembly {
     
     func assemble(container: Container) {
         container.register(NearbyMealsWireframeProtocol.self) { r in
-            let mealRepository = r.resolve(MealRepositoryProtocol.self)!
-            let imageRepository = r.resolve(ImageRepositoryProtocol.self)!
             let router = r.resolve(NearbyMealsRouterProtocol.self)!
+            let interactor = r.resolve(NearbyMealsInteractorProtocol.self)!
             
-            let interactor = NearbyMealsInteractor(mealRepository: mealRepository, imageRepository: imageRepository)
             let presenter = NearbyMealsPresenter(interactor: interactor)
             let viewController = NearbyMealsViewController(presenter: presenter)
             presenter.set(view: viewController)
@@ -28,13 +26,4 @@ class NearbyMealsAssembly: Assembly {
         }.inObjectScope(.transient)
     }
     
-    
-//    func create() -> NearbyMealsWireframe {
-//        let interactor = NearbyMealsInteractor(mealRepository: MealRepository(), imageRepository: ImageRepository())
-//        let presenter = NearbyMealsPresenter(interactor: interactor)
-//        let viewController = NearbyMealsViewController(presenter: presenter)
-//        presenter.set(view: viewController)
-//
-//        return NearbyMealsWireframe(viewController: viewController)
-//    }
 }

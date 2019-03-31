@@ -14,11 +14,11 @@ class MainAssembly: Assembly {
     func assemble(container: Container) {
         container.register(MainWireframeProtocol.self) { r in
             let findMaultaschenWireframe = r.resolve(NearbyMealsWireframeProtocol.self)!
-            let overviewWireframe = r.resolve(OverviewWireframeProtocol.self)!
-            let aboutWireframe = r.resolve(AboutWireframeProtocol.self)!
+//            let overviewWireframe = r.resolve(OverviewWireframeProtocol.self)!
+//            let aboutWireframe = r.resolve(AboutWireframeProtocol.self)!
             
             let mainView = MainViewController()
-            mainView.set(wireframes: [findMaultaschenWireframe, overviewWireframe, aboutWireframe])
+            mainView.set(wireframes: [findMaultaschenWireframe])
             
             return MainWireframe(viewController: mainView)
         }

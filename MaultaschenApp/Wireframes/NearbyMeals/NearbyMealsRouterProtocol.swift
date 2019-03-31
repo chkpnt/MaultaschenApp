@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MaultaschenData
+import MaultaschenDomain
 
 //sourcery: AutoMockable
 protocol NearbyMealsRouterProtocol: AnyObject {

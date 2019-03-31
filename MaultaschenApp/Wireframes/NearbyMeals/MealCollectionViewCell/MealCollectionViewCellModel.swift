@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import MaultaschenData
+import MaultaschenDomain
 
 class MealCollectionViewCellModel {
     
