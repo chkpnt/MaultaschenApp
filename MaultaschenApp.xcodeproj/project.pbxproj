@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54BA89502250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; };
+		54BA89572250ACBD00DB5632 /* MaultaschenDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89562250ACBD00DB5632 /* MaultaschenDomainTests.swift */; };
+		54BA89592250ACBD00DB5632 /* MaultaschenDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BA89492250ACBC00DB5632 /* MaultaschenDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54BA895C2250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; };
+		54BA895D2250ACBD00DB5632 /* MaultaschenDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BA89732250AD8200DB5632 /* MaultaschenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA896A2250AD8200DB5632 /* MaultaschenData.framework */; };
+		54BA897A2250AD8200DB5632 /* MaultaschenDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89792250AD8200DB5632 /* MaultaschenDataTests.swift */; };
+		54BA897C2250AD8200DB5632 /* MaultaschenData.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BA896C2250AD8200DB5632 /* MaultaschenData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54BA897F2250AD8200DB5632 /* MaultaschenData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA896A2250AD8200DB5632 /* MaultaschenData.framework */; };
+		54BA89802250AD8200DB5632 /* MaultaschenData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA896A2250AD8200DB5632 /* MaultaschenData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54F604152250AB3E003EAFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604142250AB3E003EAFFC /* AppDelegate.swift */; };
 		54F604172250AB3E003EAFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F604162250AB3E003EAFFC /* ViewController.swift */; };
 		54F6041A2250AB3E003EAFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54F604182250AB3E003EAFFC /* Main.storyboard */; };
@@ -16,6 +26,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		54BA89512250ACBD00DB5632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BA89462250ACBC00DB5632;
+			remoteInfo = MaultaschenDomain;
+		};
+		54BA89532250ACBD00DB5632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F604102250AB3E003EAFFC;
+			remoteInfo = MaultaschenApp;
+		};
+		54BA895A2250ACBD00DB5632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BA89462250ACBC00DB5632;
+			remoteInfo = MaultaschenDomain;
+		};
+		54BA89742250AD8200DB5632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BA89692250AD8200DB5632;
+			remoteInfo = MaultaschenData;
+		};
+		54BA89762250AD8200DB5632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54F604102250AB3E003EAFFC;
+			remoteInfo = MaultaschenApp;
+		};
+		54BA897D2250AD8200DB5632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BA89692250AD8200DB5632;
+			remoteInfo = MaultaschenData;
+		};
 		54F604262250AB42003EAFFC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54F604092250AB3E003EAFFC /* Project object */;
@@ -25,7 +77,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		54BA89632250ACBD00DB5632 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54BA89802250AD8200DB5632 /* MaultaschenData.framework in Embed Frameworks */,
+				54BA895D2250ACBD00DB5632 /* MaultaschenDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaultaschenDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA89492250ACBC00DB5632 /* MaultaschenDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaultaschenDomain.h; sourceTree = "<group>"; };
+		54BA894A2250ACBC00DB5632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BA894F2250ACBC00DB5632 /* MaultaschenDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaultaschenDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA89562250ACBD00DB5632 /* MaultaschenDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaultaschenDomainTests.swift; sourceTree = "<group>"; };
+		54BA89582250ACBD00DB5632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BA896A2250AD8200DB5632 /* MaultaschenData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaultaschenData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA896C2250AD8200DB5632 /* MaultaschenData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaultaschenData.h; sourceTree = "<group>"; };
+		54BA896D2250AD8200DB5632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BA89722250AD8200DB5632 /* MaultaschenDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaultaschenDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BA89792250AD8200DB5632 /* MaultaschenDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaultaschenDataTests.swift; sourceTree = "<group>"; };
+		54BA897B2250AD8200DB5632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54F604112250AB3E003EAFFC /* MaultaschenApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaultaschenApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F604142250AB3E003EAFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54F604162250AB3E003EAFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,10 +118,42 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		54BA89442250ACBC00DB5632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA894C2250ACBC00DB5632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BA89502250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA89672250AD8200DB5632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA896F2250AD8200DB5632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BA89732250AD8200DB5632 /* MaultaschenData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54F6040E2250AB3E003EAFFC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BA897F2250AD8200DB5632 /* MaultaschenData.framework in Frameworks */,
+				54BA895C2250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +167,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54BA89482250ACBC00DB5632 /* MaultaschenDomain */ = {
+			isa = PBXGroup;
+			children = (
+				54BA89872250ADAF00DB5632 /* Meal */,
+				54BA89882250ADBA00DB5632 /* Venue */,
+				54BA89492250ACBC00DB5632 /* MaultaschenDomain.h */,
+				54BA894A2250ACBC00DB5632 /* Info.plist */,
+			);
+			path = MaultaschenDomain;
+			sourceTree = "<group>";
+		};
+		54BA89552250ACBD00DB5632 /* MaultaschenDomainTests */ = {
+			isa = PBXGroup;
+			children = (
+				54BA89562250ACBD00DB5632 /* MaultaschenDomainTests.swift */,
+				54BA89582250ACBD00DB5632 /* Info.plist */,
+			);
+			path = MaultaschenDomainTests;
+			sourceTree = "<group>";
+		};
+		54BA896B2250AD8200DB5632 /* MaultaschenData */ = {
+			isa = PBXGroup;
+			children = (
+				54BA896C2250AD8200DB5632 /* MaultaschenData.h */,
+				54BA896D2250AD8200DB5632 /* Info.plist */,
+			);
+			path = MaultaschenData;
+			sourceTree = "<group>";
+		};
+		54BA89782250AD8200DB5632 /* MaultaschenDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				54BA89792250AD8200DB5632 /* MaultaschenDataTests.swift */,
+				54BA897B2250AD8200DB5632 /* Info.plist */,
+			);
+			path = MaultaschenDataTests;
+			sourceTree = "<group>";
+		};
+		54BA89872250ADAF00DB5632 /* Meal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Meal;
+			sourceTree = "<group>";
+		};
+		54BA89882250ADBA00DB5632 /* Venue */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Venue;
+			sourceTree = "<group>";
+		};
 		54F604082250AB3E003EAFFC = {
 			isa = PBXGroup;
 			children = (
 				54F604132250AB3E003EAFFC /* MaultaschenApp */,
 				54F604282250AB42003EAFFC /* MaultaschenAppTests */,
+				54BA89482250ACBC00DB5632 /* MaultaschenDomain */,
+				54BA89552250ACBD00DB5632 /* MaultaschenDomainTests */,
+				54BA896B2250AD8200DB5632 /* MaultaschenData */,
+				54BA89782250AD8200DB5632 /* MaultaschenDataTests */,
 				54F604122250AB3E003EAFFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +237,10 @@
 			children = (
 				54F604112250AB3E003EAFFC /* MaultaschenApp.app */,
 				54F604252250AB42003EAFFC /* MaultaschenAppTests.xctest */,
+				54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */,
+				54BA894F2250ACBC00DB5632 /* MaultaschenDomainTests.xctest */,
+				54BA896A2250AD8200DB5632 /* MaultaschenData.framework */,
+				54BA89722250AD8200DB5632 /* MaultaschenDataTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,7 +269,100 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		54BA89422250ACBC00DB5632 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BA89592250ACBD00DB5632 /* MaultaschenDomain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA89652250AD8200DB5632 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BA897C2250AD8200DB5632 /* MaultaschenData.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		54BA89462250ACBC00DB5632 /* MaultaschenDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BA89622250ACBD00DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenDomain" */;
+			buildPhases = (
+				54BA89422250ACBC00DB5632 /* Headers */,
+				54BA89432250ACBC00DB5632 /* Sources */,
+				54BA89442250ACBC00DB5632 /* Frameworks */,
+				54BA89452250ACBC00DB5632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaultaschenDomain;
+			productName = MaultaschenDomain;
+			productReference = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54BA894E2250ACBC00DB5632 /* MaultaschenDomainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BA89642250ACBD00DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenDomainTests" */;
+			buildPhases = (
+				54BA894B2250ACBC00DB5632 /* Sources */,
+				54BA894C2250ACBC00DB5632 /* Frameworks */,
+				54BA894D2250ACBC00DB5632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54BA89522250ACBD00DB5632 /* PBXTargetDependency */,
+				54BA89542250ACBD00DB5632 /* PBXTargetDependency */,
+			);
+			name = MaultaschenDomainTests;
+			productName = MaultaschenDomainTests;
+			productReference = 54BA894F2250ACBC00DB5632 /* MaultaschenDomainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54BA89692250AD8200DB5632 /* MaultaschenData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BA89812250AD8200DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenData" */;
+			buildPhases = (
+				54BA89652250AD8200DB5632 /* Headers */,
+				54BA89662250AD8200DB5632 /* Sources */,
+				54BA89672250AD8200DB5632 /* Frameworks */,
+				54BA89682250AD8200DB5632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaultaschenData;
+			productName = MaultaschenData;
+			productReference = 54BA896A2250AD8200DB5632 /* MaultaschenData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54BA89712250AD8200DB5632 /* MaultaschenDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BA89842250AD8200DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenDataTests" */;
+			buildPhases = (
+				54BA896E2250AD8200DB5632 /* Sources */,
+				54BA896F2250AD8200DB5632 /* Frameworks */,
+				54BA89702250AD8200DB5632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54BA89752250AD8200DB5632 /* PBXTargetDependency */,
+				54BA89772250AD8200DB5632 /* PBXTargetDependency */,
+			);
+			name = MaultaschenDataTests;
+			productName = MaultaschenDataTests;
+			productReference = 54BA89722250AD8200DB5632 /* MaultaschenDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		54F604102250AB3E003EAFFC /* MaultaschenApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54F6042E2250AB42003EAFFC /* Build configuration list for PBXNativeTarget "MaultaschenApp" */;
@@ -106,10 +370,13 @@
 				54F6040D2250AB3E003EAFFC /* Sources */,
 				54F6040E2250AB3E003EAFFC /* Frameworks */,
 				54F6040F2250AB3E003EAFFC /* Resources */,
+				54BA89632250ACBD00DB5632 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				54BA895B2250ACBD00DB5632 /* PBXTargetDependency */,
+				54BA897E2250AD8200DB5632 /* PBXTargetDependency */,
 			);
 			name = MaultaschenApp;
 			productName = MaultaschenApp;
@@ -144,6 +411,20 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Gregor Dschung";
 				TargetAttributes = {
+					54BA89462250ACBC00DB5632 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					54BA894E2250ACBC00DB5632 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 54F604102250AB3E003EAFFC;
+					};
+					54BA89692250AD8200DB5632 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					54BA89712250AD8200DB5632 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 54F604102250AB3E003EAFFC;
+					};
 					54F604102250AB3E003EAFFC = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -168,11 +449,43 @@
 			targets = (
 				54F604102250AB3E003EAFFC /* MaultaschenApp */,
 				54F604242250AB42003EAFFC /* MaultaschenAppTests */,
+				54BA89462250ACBC00DB5632 /* MaultaschenDomain */,
+				54BA894E2250ACBC00DB5632 /* MaultaschenDomainTests */,
+				54BA89692250AD8200DB5632 /* MaultaschenData */,
+				54BA89712250AD8200DB5632 /* MaultaschenDataTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54BA89452250ACBC00DB5632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA894D2250ACBC00DB5632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA89682250AD8200DB5632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA89702250AD8200DB5632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54F6040F2250AB3E003EAFFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -193,6 +506,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		54BA89432250ACBC00DB5632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA894B2250ACBC00DB5632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BA89572250ACBD00DB5632 /* MaultaschenDomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA89662250AD8200DB5632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BA896E2250AD8200DB5632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BA897A2250AD8200DB5632 /* MaultaschenDataTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54F6040D2250AB3E003EAFFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,6 +556,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		54BA89522250ACBD00DB5632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BA89462250ACBC00DB5632 /* MaultaschenDomain */;
+			targetProxy = 54BA89512250ACBD00DB5632 /* PBXContainerItemProxy */;
+		};
+		54BA89542250ACBD00DB5632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F604102250AB3E003EAFFC /* MaultaschenApp */;
+			targetProxy = 54BA89532250ACBD00DB5632 /* PBXContainerItemProxy */;
+		};
+		54BA895B2250ACBD00DB5632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BA89462250ACBC00DB5632 /* MaultaschenDomain */;
+			targetProxy = 54BA895A2250ACBD00DB5632 /* PBXContainerItemProxy */;
+		};
+		54BA89752250AD8200DB5632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BA89692250AD8200DB5632 /* MaultaschenData */;
+			targetProxy = 54BA89742250AD8200DB5632 /* PBXContainerItemProxy */;
+		};
+		54BA89772250AD8200DB5632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54F604102250AB3E003EAFFC /* MaultaschenApp */;
+			targetProxy = 54BA89762250AD8200DB5632 /* PBXContainerItemProxy */;
+		};
+		54BA897E2250AD8200DB5632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BA89692250AD8200DB5632 /* MaultaschenData */;
+			targetProxy = 54BA897D2250AD8200DB5632 /* PBXContainerItemProxy */;
+		};
 		54F604272250AB42003EAFFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54F604102250AB3E003EAFFC /* MaultaschenApp */;
@@ -240,6 +613,198 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54BA895E2250ACBD00DB5632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaultaschenDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54BA895F2250ACBD00DB5632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaultaschenDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54BA89602250ACBD00DB5632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				INFOPLIST_FILE = MaultaschenDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
+			};
+			name = Debug;
+		};
+		54BA89612250ACBD00DB5632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				INFOPLIST_FILE = MaultaschenDomainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
+			};
+			name = Release;
+		};
+		54BA89822250AD8200DB5632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaultaschenData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54BA89832250AD8200DB5632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MaultaschenData/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenData;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54BA89852250AD8200DB5632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				INFOPLIST_FILE = MaultaschenDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
+			};
+			name = Debug;
+		};
+		54BA89862250AD8200DB5632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4JZ2LG2YLH;
+				INFOPLIST_FILE = MaultaschenDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.chkpnt.MaultaschenDataTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaultaschenApp.app/MaultaschenApp";
+			};
+			name = Release;
+		};
 		54F6042C2250AB42003EAFFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -437,6 +1002,42 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		54BA89622250ACBD00DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BA895E2250ACBD00DB5632 /* Debug */,
+				54BA895F2250ACBD00DB5632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BA89642250ACBD00DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenDomainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BA89602250ACBD00DB5632 /* Debug */,
+				54BA89612250ACBD00DB5632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BA89812250AD8200DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BA89822250AD8200DB5632 /* Debug */,
+				54BA89832250AD8200DB5632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BA89842250AD8200DB5632 /* Build configuration list for PBXNativeTarget "MaultaschenDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BA89852250AD8200DB5632 /* Debug */,
+				54BA89862250AD8200DB5632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54F6040C2250AB3E003EAFFC /* Build configuration list for PBXProject "MaultaschenApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
