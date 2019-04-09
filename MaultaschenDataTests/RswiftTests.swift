@@ -20,9 +20,9 @@ class RswiftTests: XCTestCase {
     }
     
     func testImages() {
-        XCTAssertNotNil(R.image._33cf407520_o())
-        XCTAssertNotNil(R.image._4ffcfc301e_o())
-        XCTAssertNotNil(R.image._f100e81868_o())
+        XCTAssertNotNil(R.image.demoPictures._33cf407520_o())
+        XCTAssertNotNil(R.image.demoPictures._4ffcfc301e_o())
+        XCTAssertNotNil(R.image.demoPictures._f100e81868_o())
         XCTAssertNotNil(R.image.questionmark())
     }
     

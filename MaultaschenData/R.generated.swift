@@ -16,35 +16,41 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 4 images.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
-    /// Image `24652084979_33cf407520_o`.
-    static let _33cf407520_o = Rswift.ImageResource(bundle: R.hostingBundle, name: "24652084979_33cf407520_o")
-    /// Image `25385620682_4ffcfc301e_o`.
-    static let _4ffcfc301e_o = Rswift.ImageResource(bundle: R.hostingBundle, name: "25385620682_4ffcfc301e_o")
-    /// Image `6792282444_f100e81868_o`.
-    static let _f100e81868_o = Rswift.ImageResource(bundle: R.hostingBundle, name: "6792282444_f100e81868_o")
     /// Image `questionmark`.
     static let questionmark = Rswift.ImageResource(bundle: R.hostingBundle, name: "questionmark")
-    
-    /// `UIImage(named: "24652084979_33cf407520_o", bundle: ..., traitCollection: ...)`
-    static func _33cf407520_o(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image._33cf407520_o, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "25385620682_4ffcfc301e_o", bundle: ..., traitCollection: ...)`
-    static func _4ffcfc301e_o(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image._4ffcfc301e_o, compatibleWith: traitCollection)
-    }
-    
-    /// `UIImage(named: "6792282444_f100e81868_o", bundle: ..., traitCollection: ...)`
-    static func _f100e81868_o(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
-      return UIKit.UIImage(resource: R.image._f100e81868_o, compatibleWith: traitCollection)
-    }
     
     /// `UIImage(named: "questionmark", bundle: ..., traitCollection: ...)`
     static func questionmark(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.questionmark, compatibleWith: traitCollection)
+    }
+    
+    /// This `R.image.demoPictures` struct is generated, and contains static references to 3 images.
+    struct demoPictures {
+      /// Image `24652084979_33cf407520_o`.
+      static let _33cf407520_o = Rswift.ImageResource(bundle: R.hostingBundle, name: "DemoPictures/24652084979_33cf407520_o")
+      /// Image `25385620682_4ffcfc301e_o`.
+      static let _4ffcfc301e_o = Rswift.ImageResource(bundle: R.hostingBundle, name: "DemoPictures/25385620682_4ffcfc301e_o")
+      /// Image `6792282444_f100e81868_o`.
+      static let _f100e81868_o = Rswift.ImageResource(bundle: R.hostingBundle, name: "DemoPictures/6792282444_f100e81868_o")
+      
+      /// `UIImage(named: "24652084979_33cf407520_o", bundle: ..., traitCollection: ...)`
+      static func _33cf407520_o(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+        return UIKit.UIImage(resource: R.image.demoPictures._33cf407520_o, compatibleWith: traitCollection)
+      }
+      
+      /// `UIImage(named: "25385620682_4ffcfc301e_o", bundle: ..., traitCollection: ...)`
+      static func _4ffcfc301e_o(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+        return UIKit.UIImage(resource: R.image.demoPictures._4ffcfc301e_o, compatibleWith: traitCollection)
+      }
+      
+      /// `UIImage(named: "6792282444_f100e81868_o", bundle: ..., traitCollection: ...)`
+      static func _f100e81868_o(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+        return UIKit.UIImage(resource: R.image.demoPictures._f100e81868_o, compatibleWith: traitCollection)
+      }
+      
+      fileprivate init() {}
     }
     
     fileprivate init() {}

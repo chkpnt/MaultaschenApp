@@ -1,11 +1,3 @@
-/* 
-  About.strings
-  MaultaschenApp
-
-  Created by Gregor Dschung on 25.02.19.
-  Copyright © 2019 Gregor Dschung. All rights reserved.
-*/
-
 TabBarItemTitle="About";
 
 Header="Maultaschen";

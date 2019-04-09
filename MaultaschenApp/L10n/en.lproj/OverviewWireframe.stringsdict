@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Meals today</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Today, %1$#@num_meals@.</string>
+		<key>num_meals</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>there is nothing to eat</string>
+			<key>one</key>
+			<string>there is only one meal available</string>
+			<key>other</key>
+			<string>you can choose between %u meals %2$#@num_venues@</string>
+		</dict>
+		<key>num_venues</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string></string>
+			<key>one</key>
+			<string>in one venue</string>
+			<key>other</key>
+			<string>in %u venues</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

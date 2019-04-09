@@ -13,7 +13,7 @@ import MaultaschenDomain
 class ImageService: ImageServiceProtocol {
     
     func getImage(for meal: Meal) -> UIImage {
-        guard let image = UIImage(named: meal.id, in: maultaschenDataBundle, compatibleWith: nil) else {
+        guard let image = UIImage(named: "DemoPictures/\(meal.id)", in: maultaschenDataBundle, compatibleWith: nil) else {
             return R.image.questionmark()!
         }
         

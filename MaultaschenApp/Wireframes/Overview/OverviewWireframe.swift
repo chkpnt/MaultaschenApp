@@ -22,7 +22,7 @@ class OverviewWireframe: OverviewWireframeProtocol {
     }
     
     func configure(tabBarItem: UITabBarItem) {
-        tabBarItem.title = R.string.overview.tabBarItemTitle()
+        tabBarItem.title = OverviewStrings.tabBarItemTitle
         tabBarItem.image = R.image.overviewTabBarIcon()
     }
 }

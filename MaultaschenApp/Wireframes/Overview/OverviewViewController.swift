@@ -51,7 +51,6 @@ class OverviewViewController: UIViewController {
     
     private func setupUI() {
         view.backgroundColor = .white
-        
         let stackView = UIStackView()
         stackView.backgroundColor = UIColor.red
         stackView.axis = .vertical
@@ -60,10 +59,11 @@ class OverviewViewController: UIViewController {
         self.stackView = stackView
         
         let scrollView = UIScrollView()
+        scrollView.delegate = self
         scrollView.backgroundColor = UIColor.yellow
         scrollView.addSubview(stackView)
         self.scrollView = scrollView
-        
+
         view.addSubview(scrollView)
     }
     
@@ -88,10 +88,6 @@ class OverviewViewController: UIViewController {
         let tapRecognizer = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
         tapRecognizer.cancelsTouchesInView = false
         view.addGestureRecognizer(tapRecognizer)
-        
-        let swipeRecognizer = UISwipeGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
-        swipeRecognizer.cancelsTouchesInView = false
-        view.addGestureRecognizer(swipeRecognizer)
     }
     
     private func add(_ child: UIViewController, height: CGFloat? = nil) {
@@ -116,4 +112,10 @@ class OverviewViewController: UIViewController {
         child.didMove(toParent: self)
     }
     
+}
+
+extension OverviewViewController: UIScrollViewDelegate {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        view.endEditing(false)
+    }
 }

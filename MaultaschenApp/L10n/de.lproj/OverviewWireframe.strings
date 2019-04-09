@@ -1,0 +1,3 @@
+/* Overview (noun), will be displayed in the tab bar. The user should get an overview about the nearby available meals / venues. */
+"TabBarItemTitle" = "In der Nähe";
+

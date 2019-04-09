@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		547E957D2252B15C0027AA44 /* NearbyMeals.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547E957F2252B15C0027AA44 /* NearbyMeals.strings */; };
+		547E95802252B15F0027AA44 /* MealDetails.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547E95822252B15F0027AA44 /* MealDetails.strings */; };
+		547E95832252B1640027AA44 /* About.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547E95852252B1640027AA44 /* About.strings */; };
+		547E95A9225651D50027AA44 /* OverviewStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E95A8225651D50027AA44 /* OverviewStrings.swift */; };
+		547E95DB2256A4DF0027AA44 /* OverviewWireframe.strings in Resources */ = {isa = PBXBuildFile; fileRef = 547E95D72256766D0027AA44 /* OverviewWireframe.strings */; };
+		547E95DF2256C30F0027AA44 /* OverviewWireframe.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 547E95E12256C30F0027AA44 /* OverviewWireframe.stringsdict */; };
 		54BA89592250ACBD00DB5632 /* MaultaschenDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BA89492250ACBC00DB5632 /* MaultaschenDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BA895C2250ACBD00DB5632 /* MaultaschenDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; };
 		54BA895D2250ACBD00DB5632 /* MaultaschenDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -26,7 +32,6 @@
 		54BA8A002250B09200DB5632 /* WithStaticReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89B22250B09200DB5632 /* WithStaticReuseIdentifier.swift */; };
 		54BA8A012250B09200DB5632 /* NearbyMeals.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89B42250B09200DB5632 /* NearbyMeals.xcassets */; };
 		54BA8A022250B09200DB5632 /* NearbyMealsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89B52250B09200DB5632 /* NearbyMealsPresenter.swift */; };
-		54BA8A032250B09200DB5632 /* NearbyMeals.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89B62250B09200DB5632 /* NearbyMeals.strings */; };
 		54BA8A042250B09200DB5632 /* NearbyMealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89B72250B09200DB5632 /* NearbyMealsViewController.swift */; };
 		54BA8A052250B09200DB5632 /* MealCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89B92250B09200DB5632 /* MealCollectionViewCell.swift */; };
 		54BA8A062250B09200DB5632 /* MealCollectionViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89BA2250B09200DB5632 /* MealCollectionViewCellModel.swift */; };
@@ -78,7 +83,6 @@
 		54BA8A812250C3ED00DB5632 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89C22250B09200DB5632 /* AboutPresenter.swift */; };
 		54BA8A822250C3ED00DB5632 /* AboutRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89C32250B09200DB5632 /* AboutRouterProtocol.swift */; };
 		54BA8A832250C3ED00DB5632 /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89C42250B09200DB5632 /* AboutViewModel.swift */; };
-		54BA8A842250C3ED00DB5632 /* About.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89C52250B09200DB5632 /* About.strings */; };
 		54BA8A852250C3ED00DB5632 /* AboutWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89C62250B09200DB5632 /* AboutWireframe.swift */; };
 		54BA8A862250C3ED00DB5632 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89C72250B09200DB5632 /* About.storyboard */; };
 		54BA8A872250C3ED00DB5632 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89C82250B09200DB5632 /* AboutViewController.swift */; };
@@ -89,14 +93,12 @@
 		54BA8A8D2250C55700DB5632 /* MealDetailsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89A12250B09200DB5632 /* MealDetailsWireframe.swift */; };
 		54BA8A8E2250C55700DB5632 /* MealDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89A22250B09200DB5632 /* MealDetailsViewController.swift */; };
 		54BA8A8F2250C55700DB5632 /* MealDetails.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA899F2250B09200DB5632 /* MealDetails.xcassets */; };
-		54BA8A902250C55700DB5632 /* MealDetails.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89A32250B09200DB5632 /* MealDetails.strings */; };
 		54BA8A912250C59800DB5632 /* MealDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA899C2250B09200DB5632 /* MealDetailsInteractor.swift */; };
 		54BA8A922250C7C700DB5632 /* OverviewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D82250B09200DB5632 /* OverviewAssembly.swift */; };
 		54BA8A932250C7C700DB5632 /* OverviewRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89D92250B09200DB5632 /* OverviewRouterProtocol.swift */; };
 		54BA8A942250C7C700DB5632 /* OverviewWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89DA2250B09200DB5632 /* OverviewWireframe.swift */; };
 		54BA8A952250C7C700DB5632 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89DC2250B09200DB5632 /* OverviewViewController.swift */; };
 		54BA8A962250C7C700DB5632 /* OverviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89DD2250B09200DB5632 /* OverviewPresenter.swift */; };
-		54BA8A972250C7C700DB5632 /* Overview.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89DB2250B09200DB5632 /* Overview.strings */; };
 		54BA8A982250C7C700DB5632 /* Overview.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BA89D72250B09200DB5632 /* Overview.xcassets */; };
 		54BA8A992250C7D600DB5632 /* SimpleFilterAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89962250B09200DB5632 /* SimpleFilterAssembly.swift */; };
 		54BA8A9A2250C7D600DB5632 /* SimpleFilterWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BA89972250B09200DB5632 /* SimpleFilterWireframe.swift */; };
@@ -254,6 +256,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		547E957E2252B15C0027AA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/NearbyMeals.strings; sourceTree = "<group>"; };
+		547E95812252B15F0027AA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MealDetails.strings; sourceTree = "<group>"; };
+		547E95842252B1640027AA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/About.strings; sourceTree = "<group>"; };
+		547E95A8225651D50027AA44 /* OverviewStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewStrings.swift; sourceTree = "<group>"; };
+		547E95AB225656560027AA44 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/NearbyMeals.strings; sourceTree = "<group>"; };
+		547E95AC225656560027AA44 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MealDetails.strings; sourceTree = "<group>"; };
+		547E95AD225656560027AA44 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/About.strings; sourceTree = "<group>"; };
+		547E95AF225659960027AA44 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/NearbyMeals.strings; sourceTree = "<group>"; };
+		547E95B0225659970027AA44 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MealDetails.strings; sourceTree = "<group>"; };
+		547E95B1225659970027AA44 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/About.strings; sourceTree = "<group>"; };
+		547E95B222565C920027AA44 /* .rswiftignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .rswiftignore; sourceTree = "<group>"; };
+		547E95D62256766D0027AA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/OverviewWireframe.strings; sourceTree = "<group>"; };
+		547E95D8225676990027AA44 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/OverviewWireframe.strings; sourceTree = "<group>"; };
+		547E95DA22567BB00027AA44 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/OverviewWireframe.strings; sourceTree = "<group>"; };
+		547E95E02256C30F0027AA44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/OverviewWireframe.stringsdict; sourceTree = "<group>"; };
+		547E95E22256C77D0027AA44 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = de; path = de.lproj/OverviewWireframe.stringsdict; sourceTree = "<group>"; };
+		547E95E32256C77F0027AA44 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = fr; path = fr.lproj/OverviewWireframe.stringsdict; sourceTree = "<group>"; };
 		54BA89472250ACBC00DB5632 /* MaultaschenDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaultaschenDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BA89492250ACBC00DB5632 /* MaultaschenDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaultaschenDomain.h; sourceTree = "<group>"; };
 		54BA894A2250ACBC00DB5632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -277,7 +296,6 @@
 		54BA89A02250B09200DB5632 /* MealDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsRouter.swift; sourceTree = "<group>"; };
 		54BA89A12250B09200DB5632 /* MealDetailsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsWireframe.swift; sourceTree = "<group>"; };
 		54BA89A22250B09200DB5632 /* MealDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailsViewController.swift; sourceTree = "<group>"; };
-		54BA89A32250B09200DB5632 /* MealDetails.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = MealDetails.strings; sourceTree = "<group>"; };
 		54BA89A52250B09200DB5632 /* UIViewController+deinit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+deinit.swift"; sourceTree = "<group>"; };
 		54BA89A82250B09200DB5632 /* TextTableViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCellModel.swift; sourceTree = "<group>"; };
 		54BA89A92250B09200DB5632 /* TextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
@@ -291,7 +309,6 @@
 		54BA89B22250B09200DB5632 /* WithStaticReuseIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithStaticReuseIdentifier.swift; sourceTree = "<group>"; };
 		54BA89B42250B09200DB5632 /* NearbyMeals.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NearbyMeals.xcassets; sourceTree = "<group>"; };
 		54BA89B52250B09200DB5632 /* NearbyMealsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMealsPresenter.swift; sourceTree = "<group>"; };
-		54BA89B62250B09200DB5632 /* NearbyMeals.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = NearbyMeals.strings; sourceTree = "<group>"; };
 		54BA89B72250B09200DB5632 /* NearbyMealsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyMealsViewController.swift; sourceTree = "<group>"; };
 		54BA89B92250B09200DB5632 /* MealCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCollectionViewCell.swift; sourceTree = "<group>"; };
 		54BA89BA2250B09200DB5632 /* MealCollectionViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealCollectionViewCellModel.swift; sourceTree = "<group>"; };
@@ -304,7 +321,6 @@
 		54BA89C22250B09200DB5632 /* AboutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
 		54BA89C32250B09200DB5632 /* AboutRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutRouterProtocol.swift; sourceTree = "<group>"; };
 		54BA89C42250B09200DB5632 /* AboutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
-		54BA89C52250B09200DB5632 /* About.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = About.strings; sourceTree = "<group>"; };
 		54BA89C62250B09200DB5632 /* AboutWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutWireframe.swift; sourceTree = "<group>"; };
 		54BA89C72250B09200DB5632 /* About.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		54BA89C82250B09200DB5632 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -323,7 +339,6 @@
 		54BA89D82250B09200DB5632 /* OverviewAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewAssembly.swift; sourceTree = "<group>"; };
 		54BA89D92250B09200DB5632 /* OverviewRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewRouterProtocol.swift; sourceTree = "<group>"; };
 		54BA89DA2250B09200DB5632 /* OverviewWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewWireframe.swift; sourceTree = "<group>"; };
-		54BA89DB2250B09200DB5632 /* Overview.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Overview.strings; sourceTree = "<group>"; };
 		54BA89DC2250B09200DB5632 /* OverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		54BA89DD2250B09200DB5632 /* OverviewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverviewPresenter.swift; sourceTree = "<group>"; };
 		54BA89DF2250B09200DB5632 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -455,6 +470,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		547E95DC2256A71D0027AA44 /* L10n */ = {
+			isa = PBXGroup;
+			children = (
+				547E95D72256766D0027AA44 /* OverviewWireframe.strings */,
+				547E95E12256C30F0027AA44 /* OverviewWireframe.stringsdict */,
+			);
+			path = L10n;
+			sourceTree = "<group>";
+		};
 		54BA89482250ACBC00DB5632 /* MaultaschenDomain */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,9 +556,9 @@
 				54BA89DE2250B09200DB5632 /* Main */,
 				54BA89D62250B09200DB5632 /* Overview */,
 				54BA89942250B09200DB5632 /* SimpleFilter */,
-				54BA899B2250B09200DB5632 /* MealDetails */,
 				54BA89B32250B09200DB5632 /* NearbyMeals */,
 				54BA89CA2250B09200DB5632 /* NearbyVenues */,
+				54BA899B2250B09200DB5632 /* MealDetails */,
 				54BA89C02250B09200DB5632 /* About */,
 				54BA8A6C2250C2F300DB5632 /* TextViewPopup */,
 			);
@@ -563,7 +587,7 @@
 				54BA89A12250B09200DB5632 /* MealDetailsWireframe.swift */,
 				54BA89A22250B09200DB5632 /* MealDetailsViewController.swift */,
 				54BA899F2250B09200DB5632 /* MealDetails.xcassets */,
-				54BA89A32250B09200DB5632 /* MealDetails.strings */,
+				547E95822252B15F0027AA44 /* MealDetails.strings */,
 			);
 			path = MealDetails;
 			sourceTree = "<group>";
@@ -622,7 +646,7 @@
 				54BA89BD2250B09200DB5632 /* NearbyMealsRouterProtocol.swift */,
 				54BA89BE2250B09200DB5632 /* NearbyMealsWireframe.swift */,
 				54BA89B42250B09200DB5632 /* NearbyMeals.xcassets */,
-				54BA89B62250B09200DB5632 /* NearbyMeals.strings */,
+				547E957F2252B15C0027AA44 /* NearbyMeals.strings */,
 			);
 			path = NearbyMeals;
 			sourceTree = "<group>";
@@ -644,10 +668,10 @@
 				54BA89C22250B09200DB5632 /* AboutPresenter.swift */,
 				54BA89C32250B09200DB5632 /* AboutRouterProtocol.swift */,
 				54BA89C42250B09200DB5632 /* AboutViewModel.swift */,
-				54BA89C52250B09200DB5632 /* About.strings */,
 				54BA89C62250B09200DB5632 /* AboutWireframe.swift */,
 				54BA89C72250B09200DB5632 /* About.storyboard */,
 				54BA89C82250B09200DB5632 /* AboutViewController.swift */,
+				547E95852252B1640027AA44 /* About.strings */,
 				54BA89C92250B09200DB5632 /* About.xcassets */,
 			);
 			path = About;
@@ -685,7 +709,7 @@
 				54BA89DA2250B09200DB5632 /* OverviewWireframe.swift */,
 				54BA89DC2250B09200DB5632 /* OverviewViewController.swift */,
 				54BA89DD2250B09200DB5632 /* OverviewPresenter.swift */,
-				54BA89DB2250B09200DB5632 /* Overview.strings */,
+				547E95A8225651D50027AA44 /* OverviewStrings.swift */,
 				54BA89D72250B09200DB5632 /* Overview.xcassets */,
 			);
 			path = Overview;
@@ -920,6 +944,7 @@
 				54BA89782250AD8200DB5632 /* MaultaschenDataTests */,
 				54BA89482250ACBC00DB5632 /* MaultaschenDomain */,
 				54BA89552250ACBD00DB5632 /* MaultaschenDomainTests */,
+				547E95B222565C920027AA44 /* .rswiftignore */,
 				54F604122250AB3E003EAFFC /* Products */,
 				54BA8A2E2250B21100DB5632 /* Frameworks */,
 			);
@@ -943,6 +968,7 @@
 			children = (
 				54BA89E22250B09200DB5632 /* Application */,
 				54BA8A422250B7FD00DB5632 /* Routing */,
+				547E95DC2256A71D0027AA44 /* L10n */,
 				54BA89932250B09200DB5632 /* Wireframes */,
 				54BA8A7E2250C3A600DB5632 /* R.generated.swift */,
 				54F6041B2250AB42003EAFFC /* Assets.xcassets */,
@@ -1140,6 +1166,8 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				fr,
 			);
 			mainGroup = 54F604082250AB3E003EAFFC;
 			productRefGroup = 54F604122250AB3E003EAFFC /* Products */;
@@ -1192,16 +1220,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BA8A842250C3ED00DB5632 /* About.strings in Resources */,
-				54BA8A972250C7C700DB5632 /* Overview.strings in Resources */,
+				547E95832252B1640027AA44 /* About.strings in Resources */,
 				54BA8A982250C7C700DB5632 /* Overview.xcassets in Resources */,
-				54BA8A032250B09200DB5632 /* NearbyMeals.strings in Resources */,
+				547E957D2252B15C0027AA44 /* NearbyMeals.strings in Resources */,
 				54BA8A9B2250C7D600DB5632 /* SimpleFilter.storyboard in Resources */,
 				54BA8A8F2250C55700DB5632 /* MealDetails.xcassets in Resources */,
 				54F6041C2250AB42003EAFFC /* Assets.xcassets in Resources */,
-				54BA8A902250C55700DB5632 /* MealDetails.strings in Resources */,
+				547E95802252B15F0027AA44 /* MealDetails.strings in Resources */,
 				54BA8AA52250C7E900DB5632 /* NearbyVenues.xcassets in Resources */,
 				54BA89F92250B09200DB5632 /* TextTableViewCell.xib in Resources */,
+				547E95DB2256A4DF0027AA44 /* OverviewWireframe.strings in Resources */,
+				547E95DF2256C30F0027AA44 /* OverviewWireframe.stringsdict in Resources */,
 				54BA8A2A2250B09200DB5632 /* LaunchScreen.storyboard in Resources */,
 				54BA8A882250C3ED00DB5632 /* About.xcassets in Resources */,
 				54BA8A862250C3ED00DB5632 /* About.storyboard in Resources */,
@@ -1364,6 +1393,7 @@
 				54BA8A9E2250C7D600DB5632 /* SimpleFilterRouter.swift in Sources */,
 				54BA89FF2250B09200DB5632 /* Observable.swift in Sources */,
 				54BA8A762250C2F300DB5632 /* TextViewPopupViewModel.swift in Sources */,
+				547E95A9225651D50027AA44 /* OverviewStrings.swift in Sources */,
 				54BA8A452250B7FD00DB5632 /* RouterAssembly.swift in Sources */,
 				54BA8A922250C7C700DB5632 /* OverviewAssembly.swift in Sources */,
 				54BA8A782250C2F300DB5632 /* TextViewPopupWireframe.swift in Sources */,
@@ -1471,6 +1501,56 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		547E957F2252B15C0027AA44 /* NearbyMeals.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547E957E2252B15C0027AA44 /* en */,
+				547E95AB225656560027AA44 /* de */,
+				547E95AF225659960027AA44 /* fr */,
+			);
+			name = NearbyMeals.strings;
+			sourceTree = "<group>";
+		};
+		547E95822252B15F0027AA44 /* MealDetails.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547E95812252B15F0027AA44 /* en */,
+				547E95AC225656560027AA44 /* de */,
+				547E95B0225659970027AA44 /* fr */,
+			);
+			name = MealDetails.strings;
+			sourceTree = "<group>";
+		};
+		547E95852252B1640027AA44 /* About.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547E95842252B1640027AA44 /* en */,
+				547E95AD225656560027AA44 /* de */,
+				547E95B1225659970027AA44 /* fr */,
+			);
+			name = About.strings;
+			sourceTree = "<group>";
+		};
+		547E95D72256766D0027AA44 /* OverviewWireframe.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547E95D62256766D0027AA44 /* en */,
+				547E95D8225676990027AA44 /* de */,
+				547E95DA22567BB00027AA44 /* fr */,
+			);
+			name = OverviewWireframe.strings;
+			sourceTree = "<group>";
+		};
+		547E95E12256C30F0027AA44 /* OverviewWireframe.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				547E95E02256C30F0027AA44 /* en */,
+				547E95E22256C77D0027AA44 /* de */,
+				547E95E32256C77F0027AA44 /* fr */,
+			);
+			name = OverviewWireframe.stringsdict;
+			sourceTree = "<group>";
+		};
 		54BA89E42250B09200DB5632 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1713,6 +1793,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1774,6 +1855,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

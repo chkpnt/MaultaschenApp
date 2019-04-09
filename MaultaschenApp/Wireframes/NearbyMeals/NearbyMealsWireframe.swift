@@ -38,7 +38,7 @@ class NearbyMealsWireframe: NearbyMealsWireframeProtocol {
         tabBarItem.title = R.string.nearbyMeals.tabBarItemTitle()
         tabBarItem.image = R.image.nearbyMealsTabBarIcon()
         #else
-        tabBarItem.title = NSLocalizedString("TabBarItemTitle", tableName: "NearbyMeals", bundle: Bundle.main, comment: "")
+        tabBarItem.title = NSLocalizedString("TabBarItemTitle", tableName: "NearbyMeals", comment: "")
         tabBarItem.image = UIImage(named: "nearbyMealsTabBarIcon")
         #endif
     }

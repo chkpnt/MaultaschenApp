@@ -25,5 +25,3 @@ UIApplicationMain(
     nil,
     AppDelegateDecider().delegateClassName()
 )
-
-

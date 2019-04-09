@@ -150,42 +150,62 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 4 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 3 localization tables.
   struct string {
     /// This `R.string.about` struct is generated, and contains static references to 5 localization keys.
     struct about {
-      /// Value: ... are always delicious!
-      static let subheader = Rswift.StringResource(key: "Subheader", tableName: "About", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: About
-      static let tabBarItemTitle = Rswift.StringResource(key: "TabBarItemTitle", tableName: "About", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Maultaschen
-      static let header = Rswift.StringResource(key: "Header", tableName: "About", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Please give us 5 stars!
-      static let textOnReviewButton = Rswift.StringResource(key: "TextOnReviewButton", tableName: "About", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Thanks for your review!
-      static let thanksForReview = Rswift.StringResource(key: "ThanksForReview", tableName: "About", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// en translation: ... are always delicious!
+      /// 
+      /// Locales: en, de, fr
+      static let subheader = Rswift.StringResource(key: "Subheader", tableName: "About", bundle: R.hostingBundle, locales: ["en", "de", "fr"], comment: nil)
+      /// en translation: About
+      /// 
+      /// Locales: en, de, fr
+      static let tabBarItemTitle = Rswift.StringResource(key: "TabBarItemTitle", tableName: "About", bundle: R.hostingBundle, locales: ["en", "de", "fr"], comment: nil)
+      /// en translation: Maultaschen
+      /// 
+      /// Locales: en, de, fr
+      static let header = Rswift.StringResource(key: "Header", tableName: "About", bundle: R.hostingBundle, locales: ["en", "de", "fr"], comment: nil)
+      /// en translation: Please give us 5 stars!
+      /// 
+      /// Locales: en, de, fr
+      static let textOnReviewButton = Rswift.StringResource(key: "TextOnReviewButton", tableName: "About", bundle: R.hostingBundle, locales: ["en", "de", "fr"], comment: nil)
+      /// en translation: Thanks for your review!
+      /// 
+      /// Locales: en, de, fr
+      static let thanksForReview = Rswift.StringResource(key: "ThanksForReview", tableName: "About", bundle: R.hostingBundle, locales: ["en", "de", "fr"], comment: nil)
       
-      /// Value: ... are always delicious!
+      /// en translation: ... are always delicious!
+      /// 
+      /// Locales: en, de, fr
       static func subheader(_: Void = ()) -> String {
         return NSLocalizedString("Subheader", tableName: "About", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: About
+      /// en translation: About
+      /// 
+      /// Locales: en, de, fr
       static func tabBarItemTitle(_: Void = ()) -> String {
         return NSLocalizedString("TabBarItemTitle", tableName: "About", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: Maultaschen
+      /// en translation: Maultaschen
+      /// 
+      /// Locales: en, de, fr
       static func header(_: Void = ()) -> String {
         return NSLocalizedString("Header", tableName: "About", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: Please give us 5 stars!
+      /// en translation: Please give us 5 stars!
+      /// 
+      /// Locales: en, de, fr
       static func textOnReviewButton(_: Void = ()) -> String {
         return NSLocalizedString("TextOnReviewButton", tableName: "About", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: Thanks for your review!
+      /// en translation: Thanks for your review!
+      /// 
+      /// Locales: en, de, fr
       static func thanksForReview(_: Void = ()) -> String {
         return NSLocalizedString("ThanksForReview", tableName: "About", bundle: R.hostingBundle, comment: "")
       }
@@ -200,25 +220,16 @@ struct R: Rswift.Validatable {
     
     /// This `R.string.nearbyMeals` struct is generated, and contains static references to 1 localization keys.
     struct nearbyMeals {
-      /// Value: Meals!
-      static let tabBarItemTitle = Rswift.StringResource(key: "TabBarItemTitle", tableName: "NearbyMeals", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// en translation: Meals!
+      /// 
+      /// Locales: en, de, fr
+      static let tabBarItemTitle = Rswift.StringResource(key: "TabBarItemTitle", tableName: "NearbyMeals", bundle: R.hostingBundle, locales: ["en", "de", "fr"], comment: nil)
       
-      /// Value: Meals!
+      /// en translation: Meals!
+      /// 
+      /// Locales: en, de, fr
       static func tabBarItemTitle(_: Void = ()) -> String {
         return NSLocalizedString("TabBarItemTitle", tableName: "NearbyMeals", bundle: R.hostingBundle, comment: "")
-      }
-      
-      fileprivate init() {}
-    }
-    
-    /// This `R.string.overview` struct is generated, and contains static references to 1 localization keys.
-    struct overview {
-      /// Value: Overview
-      static let tabBarItemTitle = Rswift.StringResource(key: "TabBarItemTitle", tableName: "Overview", bundle: R.hostingBundle, locales: [], comment: nil)
-      
-      /// Value: Overview
-      static func tabBarItemTitle(_: Void = ()) -> String {
-        return NSLocalizedString("TabBarItemTitle", tableName: "Overview", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}
