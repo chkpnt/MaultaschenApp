@@ -1,5 +1,5 @@
 //
-//  SimpleFilterRouter.swift
+//  SimpleFilterRouterProtocol.swift
 //  MaultaschenApp
 //
 //  Created by Gregor Dschung on 25.03.19.

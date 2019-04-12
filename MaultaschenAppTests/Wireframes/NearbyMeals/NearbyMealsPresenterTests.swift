@@ -32,43 +32,51 @@ class NearbyMealsPresenterTests: XCTestCase {
     }
     
     func testFindMeals() {
+        sut.findMeals()
+        
+        Verify(interactor, .findMeals())
+    }
+    
+    func testDidFind() {
         let meal1 = Meal(id: "1"); meal1.title = "Maultasche"
         let meal2 = Meal(id: "2"); meal2.title = "Rührei"
-        Given(interactor, .findMeals(willReturn: [
-            (meal: meal1, image: UIImage()),
-            (meal: meal2, image: UIImage())
-        ]))
         var capturedViewCellModelsToShow: [MealCollectionViewCellModel]?
         Perform(view, .show(meals: .any, perform: { capturedViewCellModelsToShow = $0 }))
         
-        sut.findMeals()
+        sut.didFind([
+            (meal: meal1, image: UIImage()),
+            (meal: meal2, image: UIImage())
+        ])
         
-        XCTAssertEqual(capturedViewCellModelsToShow?.count, 2)
-        XCTAssertTrue(capturedViewCellModelsToShow!.contains(where: { $0.title == "Maultasche" }))
-        XCTAssertTrue(capturedViewCellModelsToShow!.contains(where: { $0.title == "Rührei" }))
+        guard let viewModels = capturedViewCellModelsToShow else { return XCTFail("view.show(...) not called") }
+        XCTAssertEqual(viewModels.count, 2)
+        XCTAssertTrue(viewModels.contains(where: { $0.title == "Maultasche" }))
+        XCTAssertTrue(viewModels.contains(where: { $0.title == "Rührei" }))
     }
     
     func testFilter_CaseInsensitive() {
-        testFindMeals()
+        testDidFind()
         var capturedViewCellModelsToShow: [MealCollectionViewCellModel]?
         Perform(view, .show(meals: .any, perform: { capturedViewCellModelsToShow = $0 }))
         
         sut.filterMeals(by: "maul")
         
-        XCTAssertEqual(capturedViewCellModelsToShow?.count, 1)
-        XCTAssertTrue(capturedViewCellModelsToShow!.contains(where: { $0.title == "Maultasche" }))
+        guard let viewModels = capturedViewCellModelsToShow else { return XCTFail("view.show(...) not called") }
+        XCTAssertEqual(viewModels.count, 1)
+        XCTAssertTrue(viewModels.contains(where: { $0.title == "Maultasche" }))
     }
     
     func testFilter_EmptyFilterFiltersNothing() {
-        testFindMeals()
+        testDidFind()
         var capturedViewCellModelsToShow: [MealCollectionViewCellModel]?
         Perform(view, .show(meals: .any, perform: { capturedViewCellModelsToShow = $0 }))
         
         sut.filterMeals(by: "")
         
-        XCTAssertEqual(capturedViewCellModelsToShow?.count, 2)
-        XCTAssertTrue(capturedViewCellModelsToShow!.contains(where: { $0.title == "Maultasche" }))
-        XCTAssertTrue(capturedViewCellModelsToShow!.contains(where: { $0.title == "Rührei" }))
+        guard let viewModels = capturedViewCellModelsToShow else { return XCTFail("view.show(...) not called") }
+        XCTAssertEqual(viewModels.count, 2)
+        XCTAssertTrue(viewModels.contains(where: { $0.title == "Maultasche" }))
+        XCTAssertTrue(viewModels.contains(where: { $0.title == "Rührei" }))
     }
     
     func testDidTapMeal() {

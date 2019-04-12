@@ -19,6 +19,6 @@ class SimpleFilterAssembly: Assembly {
             viewController.set(presenter: presenter)
             
             return SimpleFilterWireframe(viewController: viewController, presenter: presenter)
-        }.inObjectScope(.transient)
+        }
     }
 }

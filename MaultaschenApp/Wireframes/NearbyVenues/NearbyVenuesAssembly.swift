@@ -24,7 +24,7 @@ class NearbyVenuesAssembly: Assembly {
             interactor.set(delegate: presenter)
             
             return NearbyVenuesWireframe(viewController: viewController, presenter: presenter)
-        }.inObjectScope(.transient)
+        }
     }
     
 }

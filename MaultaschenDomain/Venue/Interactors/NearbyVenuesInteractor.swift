@@ -33,6 +33,7 @@ class NearbyVenuesInteractor: NearbyVenuesInteractorProtocol {
     }
     
     func findVenues() {
+        // Of course this would be async in reality
         let venues = venueService.getNearbyVenues()
         delegate?.didFind(venues: venues)
     }

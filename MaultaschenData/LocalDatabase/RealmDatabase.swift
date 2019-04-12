@@ -50,7 +50,6 @@ extension RealmDatabase: LocalDatabaseProtocol {
         return venues
     }
     
-    
     func save(meal: Meal) {
         let entity = mealEntityMapper.map(meal: meal)
         try! realm.write {

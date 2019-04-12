@@ -11,8 +11,6 @@ import MaultaschenDomain
 
 //sourcery: AutoMockable
 protocol LocalDatabaseProtocol {
-    func bootstrap()
-    
     func findAllMeals() -> [Meal]
     func save(meal: Meal)
     

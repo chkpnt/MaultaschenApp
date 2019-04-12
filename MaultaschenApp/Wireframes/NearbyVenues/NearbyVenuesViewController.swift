@@ -51,7 +51,11 @@ class NearbyVenuesViewController: UICollectionViewController {
         view.backgroundColor = .red
         collectionView.backgroundColor = .orange
         collectionView.register(R.nib.venueCollectionViewCell)
-        presenter.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.findVenues()
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -77,10 +81,7 @@ class NearbyVenuesViewController: UICollectionViewController {
 extension NearbyVenuesViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let padding: CGFloat =  50
-        let collectionViewSize = collectionView.frame.size.width - padding
-        
-        return CGSize(width: collectionViewSize/2, height: 230)
+        return CGSize(width: 180, height: 200)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

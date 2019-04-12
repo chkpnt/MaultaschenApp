@@ -19,7 +19,7 @@ class Environment {
     private let assembler: Assembler
 
     private init() {
-        self.assembler = Assembler()
+        self.assembler = Assembler(parentAssembler: nil, defaultObjectScope: .transient, behaviors: [])
     }
 
     private var mainWireframe: MainWireframeProtocol?

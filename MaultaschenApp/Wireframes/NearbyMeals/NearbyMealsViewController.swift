@@ -14,6 +14,20 @@ protocol NearbyMealsViewProtocol: AnyObject {
     func show(meals: [MealCollectionViewCellModel])
 }
 
+// I have NO converns writing this extension "above" the ViewController.
+// Pro point: The protocol implementation is THE important thing
+// from the presenter's perspective, the ViewController itself
+// is a detail. And its mostly reasonable to put the most important
+// stuff above.
+extension NearbyMealsViewController: NearbyMealsViewProtocol {
+    
+    func show(meals: [MealCollectionViewCellModel]) {
+        self.meals = meals
+        collectionView.reloadData()
+    }
+    
+}
+
 class NearbyMealsViewController: UICollectionViewController {
     
     private let presenter: NearbyMealsPresenterProtocol
@@ -37,8 +51,6 @@ class NearbyMealsViewController: UICollectionViewController {
         #else
         collectionView.register(UINib(nibName: "MealCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "MealCollectionViewCell")
         #endif
-        
-        presenter.viewDidLoad()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,6 +59,11 @@ class NearbyMealsViewController: UICollectionViewController {
         let indexPaths = collectionView.indexPathsForSelectedItems ?? []
         indexPaths.map { collectionView.cellForItem(at: $0) }
             .forEach { $0?.shrink() }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.findMeals()
     }
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -80,22 +97,10 @@ class NearbyMealsViewController: UICollectionViewController {
 
 }
 
-extension NearbyMealsViewController: NearbyMealsViewProtocol {
-    
-    func show(meals: [MealCollectionViewCellModel]) {
-        self.meals = meals
-        collectionView.reloadData()
-    }
-    
-}
-
 extension NearbyMealsViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let padding: CGFloat =  50
-        let collectionViewSize = collectionView.frame.size.width - padding
-        
-        return CGSize(width: collectionViewSize/2, height: 250)
+        return CGSize(width: 180, height: 250)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {

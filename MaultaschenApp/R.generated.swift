@@ -16,7 +16,7 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.image` struct is generated, and contains static references to 6 images.
+  /// This `R.image` struct is generated, and contains static references to 7 images.
   struct image {
     /// Image `aboutTabBarIcon`.
     static let aboutTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "aboutTabBarIcon")
@@ -28,6 +28,8 @@ struct R: Rswift.Validatable {
     static let nearbyVenuesTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "nearbyVenuesTabBarIcon")
     /// Image `no_image`.
     static let no_image = Rswift.ImageResource(bundle: R.hostingBundle, name: "no_image")
+    /// Image `overviewTabBarIco`.
+    static let overviewTabBarIco = Rswift.ImageResource(bundle: R.hostingBundle, name: "overviewTabBarIco")
     /// Image `overviewTabBarIcon`.
     static let overviewTabBarIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "overviewTabBarIcon")
     
@@ -54,6 +56,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "no_image", bundle: ..., traitCollection: ...)`
     static func no_image(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.no_image, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "overviewTabBarIco", bundle: ..., traitCollection: ...)`
+    static func overviewTabBarIco(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.overviewTabBarIco, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "overviewTabBarIcon", bundle: ..., traitCollection: ...)`

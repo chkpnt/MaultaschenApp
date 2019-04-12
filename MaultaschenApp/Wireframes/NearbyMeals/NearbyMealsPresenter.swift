@@ -11,7 +11,6 @@ import MaultaschenDomain
 
 //sourcery: AutoMockable
 protocol NearbyMealsPresenterProtocol: AnyObject {
-    func viewDidLoad()
     func findMeals()
     func didTap(meal: MealCollectionViewCellModel)
     func filterMeals(by name: String)
@@ -24,6 +23,7 @@ class NearbyMealsPresenter: NearbyMealsPresenterProtocol {
     private weak var view: NearbyMealsViewProtocol?
     
     private var currentViewModels: [MealCollectionViewCellModel] = []
+    private var currentActiveFilter: String = ""
 
     init(interactor: NearbyMealsInteractorProtocol) {
         self.interactor = interactor
@@ -37,15 +37,8 @@ class NearbyMealsPresenter: NearbyMealsPresenterProtocol {
         self.view = view
     }
     
-    func viewDidLoad() {
-        findMeals()
-    }
-    
     func findMeals() {
-        let meals = interactor.findMeals()
-            .map { m in MealCollectionViewCellModel(meal: m.meal, image: m.image) }
-        currentViewModels = meals
-        view?.show(meals: meals)
+        interactor.findMeals()
     }
     
     func didTap(meal: MealCollectionViewCellModel) {
@@ -53,15 +46,29 @@ class NearbyMealsPresenter: NearbyMealsPresenterProtocol {
     }
     
     func filterMeals(by name: String) {
-        guard !name.isEmpty else {
+        currentActiveFilter = name
+        updateView()
+    }
+    
+    private func updateView() {
+        guard !currentActiveFilter.isEmpty else {
             view?.show(meals: currentViewModels)
             return
         }
         
         let filteredViewModels = currentViewModels.filter {
-            $0.title.localizedCaseInsensitiveContains(name) || $0.venue.localizedCaseInsensitiveContains(name)
+            $0.title.localizedCaseInsensitiveContains(currentActiveFilter) || $0.venue.localizedCaseInsensitiveContains(currentActiveFilter)
         }
         view?.show(meals: filteredViewModels)
+    }
+    
+}
+
+extension NearbyMealsPresenter: NearbyMealsInteractorDelegate {
+    
+    func didFind(_ data: [(meal: Meal, image: UIImage)]) {
+        currentViewModels = data.map { MealCollectionViewCellModel(meal: $0.meal, image: $0.image) }
+        updateView()
     }
     
 }

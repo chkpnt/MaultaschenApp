@@ -11,22 +11,34 @@ import UIKit
 
 //sourcery: AutoMockable
 public protocol NearbyMealsInteractorProtocol: AnyObject {
-    func findMeals() -> [(meal: Meal, image: UIImage)]
+    func findMeals()
+    func set(delegate: NearbyMealsInteractorDelegate)
+}
+
+//sourcery: AutoMockable
+public protocol NearbyMealsInteractorDelegate: AnyObject {
+    func didFind(_: [(meal: Meal, image: UIImage)])
 }
 
 class NearbyMealsInteractor: NearbyMealsInteractorProtocol {
     
     private let mealService: MealServiceProtocol
     private let imageService: ImageServiceProtocol
+    private weak var delegate: NearbyMealsInteractorDelegate?
     
     init(mealService: MealServiceProtocol, imageService: ImageServiceProtocol) {
         self.mealService = mealService
         self.imageService = imageService
     }
     
-    func findMeals() -> [(meal: Meal, image: UIImage)] {
+    func set(delegate: NearbyMealsInteractorDelegate) {
+        self.delegate = delegate
+    }
+    
+    func findMeals() {
+        // Of course this would be async in reality
         let result = mealService.getAllMeals()
             .map { m in (m, imageService.getImage(for: m)) }
-        return result
+        delegate?.didFind(result)
     }
 }

@@ -10,7 +10,6 @@ import Foundation
 import MaultaschenDomain
 
 protocol NearbyVenuesPresenterProtocol: AnyObject {
-    func viewDidLoad()
     func findVenues()
     func filerVenues(by name: String)
 }
@@ -34,21 +33,22 @@ class NearbyVenuesPresenter: NearbyVenuesPresenterProtocol {
         self.view = view
     }
     
-    func viewDidLoad() {
-        findVenues()
-    }
-    
     func findVenues() {
         interactor.findVenues()
     }
     
     func filerVenues(by name: String) {
-        guard !name.isEmpty else {
+        currentActiveFilter = name
+        updateView()
+    }
+    
+    private func updateView() {
+        guard !currentActiveFilter.isEmpty else {
             view?.show(venues: currentViewModels)
             return
         }
         
-        let filteredViewModels = currentViewModels.filter { $0.venue.localizedCaseInsensitiveContains(name) }
+        let filteredViewModels = currentViewModels.filter { $0.venue.localizedCaseInsensitiveContains(currentActiveFilter) }
         view?.show(venues: filteredViewModels)
     }
     
@@ -58,8 +58,7 @@ extension NearbyVenuesPresenter: NearbyVenuesInteractorDelegate {
     
     func didFind(venues: [Venue]) {
         currentViewModels = venues.map { VenueCollectionViewCellModel(venue: $0.name, image: R.image.no_image()) }
-        view?.show(venues: currentViewModels)
+        updateView()
     }
-    
     
 }

@@ -226,12 +226,6 @@ open class LocalDatabaseProtocolMock: LocalDatabaseProtocol, Mock {
 
 
 
-    open func bootstrap() {
-        addInvocation(.m_bootstrap)
-		let perform = methodPerformValue(.m_bootstrap) as? () -> Void
-		perform?()
-    }
-
     open func findAllMeals() -> [Meal] {
         addInvocation(.m_findAllMeals)
 		let perform = methodPerformValue(.m_findAllMeals) as? () -> Void
@@ -268,15 +262,12 @@ open class LocalDatabaseProtocolMock: LocalDatabaseProtocol, Mock {
 
 
     fileprivate enum MethodType {
-        case m_bootstrap
         case m_findAllMeals
         case m_save__meal_meal(Parameter<Meal>)
         case m_findAllVenues__near_positionmaxDistance_maxDistance(Parameter<CLLocationCoordinate2D>, Parameter<CLLocationDistance>)
 
         static func compareParameters(lhs: MethodType, rhs: MethodType, matcher: Matcher) -> Bool {
             switch (lhs, rhs) {
-            case (.m_bootstrap, .m_bootstrap):
-                return true 
             case (.m_findAllMeals, .m_findAllMeals):
                 return true 
             case (.m_save__meal_meal(let lhsMeal), .m_save__meal_meal(let rhsMeal)):
@@ -292,7 +283,6 @@ open class LocalDatabaseProtocolMock: LocalDatabaseProtocol, Mock {
 
         func intValue() -> Int {
             switch self {
-            case .m_bootstrap: return 0
             case .m_findAllMeals: return 0
             case let .m_save__meal_meal(p0): return p0.intValue
             case let .m_findAllVenues__near_positionmaxDistance_maxDistance(p0, p1): return p0.intValue + p1.intValue
@@ -334,7 +324,6 @@ open class LocalDatabaseProtocolMock: LocalDatabaseProtocol, Mock {
     public struct Verify {
         fileprivate var method: MethodType
 
-        public static func bootstrap() -> Verify { return Verify(method: .m_bootstrap)}
         public static func findAllMeals() -> Verify { return Verify(method: .m_findAllMeals)}
         public static func save(meal: Parameter<Meal>) -> Verify { return Verify(method: .m_save__meal_meal(`meal`))}
         public static func findAllVenues(near position: Parameter<CLLocationCoordinate2D>, maxDistance: Parameter<CLLocationDistance>) -> Verify { return Verify(method: .m_findAllVenues__near_positionmaxDistance_maxDistance(`position`, `maxDistance`))}
@@ -344,9 +333,6 @@ open class LocalDatabaseProtocolMock: LocalDatabaseProtocol, Mock {
         fileprivate var method: MethodType
         var performs: Any
 
-        public static func bootstrap(perform: @escaping () -> Void) -> Perform {
-            return Perform(method: .m_bootstrap, performs: perform)
-        }
         public static func findAllMeals(perform: @escaping () -> Void) -> Perform {
             return Perform(method: .m_findAllMeals, performs: perform)
         }
@@ -1087,6 +1073,144 @@ open class MealServiceProtocolMock: MealServiceProtocol, Mock {
     }
 }
 
+// MARK: - NearbyMealsInteractorDelegate
+open class NearbyMealsInteractorDelegateMock: NearbyMealsInteractorDelegate, Mock {
+    init(sequencing sequencingPolicy: SequencingPolicy = .lastWrittenResolvedFirst, stubbing stubbingPolicy: StubbingPolicy = .wrap, file: StaticString = #file, line: UInt = #line) {
+        self.sequencingPolicy = sequencingPolicy
+        self.stubbingPolicy = stubbingPolicy
+        self.file = file
+        self.line = line
+    }
+
+    var matcher: Matcher = Matcher.default
+    var stubbingPolicy: StubbingPolicy = .wrap
+    var sequencingPolicy: SequencingPolicy = .lastWrittenResolvedFirst
+    private var invocations: [MethodType] = []
+    private var methodReturnValues: [Given] = []
+    private var methodPerformValues: [Perform] = []
+    private var file: StaticString?
+    private var line: UInt?
+
+    public typealias PropertyStub = Given
+    public typealias MethodStub = Given
+    public typealias SubscriptStub = Given
+
+    /// Convenience method - call setupMock() to extend debug information when failure occurs
+    public func setupMock(file: StaticString = #file, line: UInt = #line) {
+        self.file = file
+        self.line = line
+    }
+
+
+
+
+
+    open func didFind(_: [(meal: Meal, image: UIImage)]) {
+        addInvocation(.m_didFind)
+		let perform = methodPerformValue(.m_didFind) as? () -> Void
+		perform?()
+    }
+
+
+    fileprivate enum MethodType {
+        case m_didFind
+
+        static func compareParameters(lhs: MethodType, rhs: MethodType, matcher: Matcher) -> Bool {
+            switch (lhs, rhs) {
+            case (.m_didFind, .m_didFind):
+                return true 
+            }
+        }
+
+        func intValue() -> Int {
+            switch self {
+            case .m_didFind: return 0
+            }
+        }
+    }
+
+    open class Given: StubbedMethod {
+        fileprivate var method: MethodType
+
+        private init(method: MethodType, products: [Product]) {
+            self.method = method
+            super.init(products)
+        }
+
+
+    }
+
+    public struct Verify {
+        fileprivate var method: MethodType
+
+        public static func didFind() -> Verify { return Verify(method: .m_didFind)}
+    }
+
+    public struct Perform {
+        fileprivate var method: MethodType
+        var performs: Any
+
+        public static func didFind(perform: @escaping () -> Void) -> Perform {
+            return Perform(method: .m_didFind, performs: perform)
+        }
+    }
+
+    public func given(_ method: Given) {
+        methodReturnValues.append(method)
+    }
+
+    public func perform(_ method: Perform) {
+        methodPerformValues.append(method)
+        methodPerformValues.sort { $0.method.intValue() < $1.method.intValue() }
+    }
+
+    public func verify(_ method: Verify, count: Count = Count.moreOrEqual(to: 1), file: StaticString = #file, line: UInt = #line) {
+        let invocations = matchingCalls(method.method)
+        MockyAssert(count.matches(invocations.count), "Expected: \(count) invocations of `\(method.method)`, but was: \(invocations.count)", file: file, line: line)
+    }
+
+    private func addInvocation(_ call: MethodType) {
+        invocations.append(call)
+    }
+    private func methodReturnValue(_ method: MethodType) throws -> Product {
+        let candidates = sequencingPolicy.sorted(methodReturnValues, by: { $0.method.intValue() > $1.method.intValue() })
+        let matched = candidates.first(where: { $0.isValid && MethodType.compareParameters(lhs: $0.method, rhs: method, matcher: matcher) })
+        guard let product = matched?.getProduct(policy: self.stubbingPolicy) else { throw MockError.notStubed }
+        return product
+    }
+    private func methodPerformValue(_ method: MethodType) -> Any? {
+        let matched = methodPerformValues.reversed().first { MethodType.compareParameters(lhs: $0.method, rhs: method, matcher: matcher) }
+        return matched?.performs
+    }
+    private func matchingCalls(_ method: MethodType) -> [MethodType] {
+        return invocations.filter { MethodType.compareParameters(lhs: $0, rhs: method, matcher: matcher) }
+    }
+    private func matchingCalls(_ method: Verify) -> Int {
+        return matchingCalls(method.method).count
+    }
+    private func givenGetterValue<T>(_ method: MethodType, _ message: String) -> T {
+        do {
+            return try methodReturnValue(method).casted()
+        } catch {
+            onFatalFailure(message)
+            Failure(message)
+        }
+    }
+    private func optionalGivenGetterValue<T>(_ method: MethodType, _ message: String) -> T? {
+        do {
+            return try methodReturnValue(method).casted()
+        } catch {
+            return nil
+        }
+    }
+    private func onFatalFailure(_ message: String) {
+        #if Mocky
+        guard let file = self.file, let line = self.line else { return } // Let if fail if cannot handle gratefully
+        SwiftyMockyTestObserver.handleMissingStubError(message: message, file: file, line: line)
+        #endif
+    }
+}
+
 // MARK: - NearbyMealsInteractorProtocol
 open class NearbyMealsInteractorProtocolMock: NearbyMealsInteractorProtocol, Mock {
     init(sequencing sequencingPolicy: SequencingPolicy = .lastWrittenResolvedFirst, stubbing stubbingPolicy: StubbingPolicy = .wrap, file: StaticString = #file, line: UInt = #line) {
@@ -1119,34 +1243,38 @@ open class NearbyMealsInteractorProtocolMock: NearbyMealsInteractorProtocol, Moc
 
 
 
-    open func findMeals() -> [(meal: Meal, image: UIImage)] {
+    open func findMeals() {
         addInvocation(.m_findMeals)
 		let perform = methodPerformValue(.m_findMeals) as? () -> Void
 		perform?()
-		var __value: [(meal: Meal, image: UIImage)]
-		do {
-		    __value = try methodReturnValue(.m_findMeals).casted()
-		} catch {
-			onFatalFailure("Stub return value not specified for findMeals(). Use given")
-			Failure("Stub return value not specified for findMeals(). Use given")
-		}
-		return __value
+    }
+
+    open func set(delegate: NearbyMealsInteractorDelegate) {
+        addInvocation(.m_set__delegate_delegate(Parameter<NearbyMealsInteractorDelegate>.value(`delegate`)))
+		let perform = methodPerformValue(.m_set__delegate_delegate(Parameter<NearbyMealsInteractorDelegate>.value(`delegate`))) as? (NearbyMealsInteractorDelegate) -> Void
+		perform?(`delegate`)
     }
 
 
     fileprivate enum MethodType {
         case m_findMeals
+        case m_set__delegate_delegate(Parameter<NearbyMealsInteractorDelegate>)
 
         static func compareParameters(lhs: MethodType, rhs: MethodType, matcher: Matcher) -> Bool {
             switch (lhs, rhs) {
             case (.m_findMeals, .m_findMeals):
                 return true 
+            case (.m_set__delegate_delegate(let lhsDelegate), .m_set__delegate_delegate(let rhsDelegate)):
+                guard Parameter.compare(lhs: lhsDelegate, rhs: rhsDelegate, with: matcher) else { return false } 
+                return true 
+            default: return false
             }
         }
 
         func intValue() -> Int {
             switch self {
             case .m_findMeals: return 0
+            case let .m_set__delegate_delegate(p0): return p0.intValue
             }
         }
     }
@@ -1160,22 +1288,13 @@ open class NearbyMealsInteractorProtocolMock: NearbyMealsInteractorProtocol, Moc
         }
 
 
-        public static func findMeals(willReturn: [(meal: Meal, image: UIImage)]...) -> MethodStub {
-            return Given(method: .m_findMeals, products: willReturn.map({ Product.return($0) }))
-        }
-        public static func findMeals(willProduce: (Stubber<[(meal: Meal, image: UIImage)]>) -> Void) -> MethodStub {
-            let willReturn: [[(meal: Meal, image: UIImage)]] = []
-			let given: Given = { return Given(method: .m_findMeals, products: willReturn.map({ Product.return($0) })) }()
-			let stubber = given.stub(for: ([(meal: Meal, image: UIImage)]).self)
-			willProduce(stubber)
-			return given
-        }
     }
 
     public struct Verify {
         fileprivate var method: MethodType
 
         public static func findMeals() -> Verify { return Verify(method: .m_findMeals)}
+        public static func set(delegate: Parameter<NearbyMealsInteractorDelegate>) -> Verify { return Verify(method: .m_set__delegate_delegate(`delegate`))}
     }
 
     public struct Perform {
@@ -1184,6 +1303,9 @@ open class NearbyMealsInteractorProtocolMock: NearbyMealsInteractorProtocol, Moc
 
         public static func findMeals(perform: @escaping () -> Void) -> Perform {
             return Perform(method: .m_findMeals, performs: perform)
+        }
+        public static func set(delegate: Parameter<NearbyMealsInteractorDelegate>, perform: @escaping (NearbyMealsInteractorDelegate) -> Void) -> Perform {
+            return Perform(method: .m_set__delegate_delegate(`delegate`), performs: perform)
         }
     }
 

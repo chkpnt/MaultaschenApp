@@ -19,11 +19,13 @@ class NearbyMealsAssembly: Assembly {
             
             let presenter = NearbyMealsPresenter(interactor: interactor)
             let viewController = NearbyMealsViewController(presenter: presenter)
+            
             presenter.set(view: viewController)
             presenter.set(router: router)
+            interactor.set(delegate: presenter)
             
             return NearbyMealsWireframe(viewController: viewController, presenter: presenter)
-        }.inObjectScope(.transient)
+        }
     }
     
 }
